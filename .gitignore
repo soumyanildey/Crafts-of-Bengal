@@ -1,1 +1,3 @@
 model.keras
+# Ignore the ML model
+e_commerce/ml_model/model.h5
