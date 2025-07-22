@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% extends 'Home/index.html' %} {% block body_block %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    {%load static%}
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .checkout-container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+      }
+      table,
+      th,
+      th,
+      td {
+        padding: 15px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 20px;
+      }
+      .card {
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .btn-primary {
+        background-color: #198754;
+        border: none;
+      }
+      /* .btn-primary:hover {
+            background-color: #146c43;
+        } */
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container mt-3">
+      <h2 class="text-center mb-4">Checkout</h2>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="card p-3 shadow">
+            <div class="card-body">
+              <h4>Basic Details</h4>
+              <hr/>
+              <div class="row p-3">
+                <div class="col-md-6">
+                  <label for=""> First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter First Name"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for=""> Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Last Name"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="col-md-6 mt-2">
+                  <label for=""> Email Id </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Email Id"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="col-md-6 mt-2">
+                  <label for=""> Phone No.</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Phone No."
+                    name=""
+                    id=""
+                  />
+                </div>
+
+                <div class="col-md-12 mt-2">
+                  <label for=""> Address </label>
+                  <textarea
+                    class="form-control"
+                    placeholder="Enter full addresss"
+                    name=""
+                    id=""
+                  ></textarea>
+                </div>
+
+                <div class="col-md-6 mt-2">
+                  <label for=""> City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter City"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="col-md-6 mt-2">
+                  <label for=""> Pin Code</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Pin code"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="col-md-6 mt-2">
+                  <label for=""> State</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter State"
+                    name=""
+                    id=""
+                  />
+                </div>
+                <div class="col-md-6 mt-2">
+                  <label for=""> Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Country"
+                    name=""
+                    id=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card shadow">
+            <div class="card-body">
+              <h4>Order Summary</h4>
+              <hr />
+              {% if cartitems %}
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for item in cartitems %}
+                  <tr>
+                    <td>
+                      <a href="{% url 'products:detail' item.product_id %}">
+                        <img
+                          src="{{item.product.product_image.url}}"
+                          alt="{{item.product.product_name}}"
+                          width="100px"
+                        />
+                      </a>
+                    </td>
+                    <td>{{item.product.product_name}}</td>
+                    <td>{{item.quantity}}</td>
+                    <td>{{item.product.product_price}}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+              {% else %}
+              <h4>Your Cart is Empty</h4>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container my-4">
+      <h1 class="text-center mb-4 fw-bold">My Orders</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card p-4 shadow">
+            <div class="card-body">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>Order date</th>
+                    <th>Tracking Number</th>
+                    <th>Total Price</th>
+                    <th>Status</th>
+                    
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    {% for item in orders %}
+                  </tr>
+
+                  <tr>
+                    <td>{{ item.created_at|date:"d M Y, h:i A" }}</td>
+                    <td>{{ item.tracking_no }}</td>
+                    <td>{{ item.total_price }}</td>
+                    <td>{{ item.status }}</td>
+                    <td>
+                      <a
+                        href="{% url 'purchase:orderview' item.tracking_no %}"
+                        class="btn btn-primary"
+                        >View</a
+                      >
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+  {%endblock%}
+
+  
+</html>

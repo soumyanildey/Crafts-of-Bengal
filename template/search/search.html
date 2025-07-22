@@ -1,0 +1,168 @@
+{% extends 'Home/index.html' %}
+{% load static %}
+
+{% block body_block %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafts of Bengal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@5.9.0/dist/css/coreui.min.css" rel="stylesheet">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@5.9.0/dist/js/coreui.bundle.min.js"></script>
+
+    <style>
+        .layout {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+        }
+
+        .content {
+    display: grid;
+    grid-template-columns: 25% 1fr; /* Default layout with sidebar */
+    overflow: hidden;
+}
+
+.content.full-width {
+    grid-template-columns: 1fr; /* Full width when no sidebar */
+}
+
+.product-section {
+    overflow-y: auto;
+    padding: 20px;
+}
+
+        aside {
+            background-color: #f8f9fa;
+            border-right: 1px solid #ddd;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <!-- Header -->
+        <header>
+            {% block header_block %}
+            <!-- Optional: include 'includes/header.html' here -->
+            {% endblock %}
+        </header>
+
+        <!-- Main Content -->
+        <div class="content {% if not request.GET.search %}full-width{% endif %}">
+            <!-- Filter Sidebar -->
+             {%if request.GET.search%}
+             {% include 'Filter/filter.html' %}
+            
+            
+            <!-- Products Section -->
+            <section class="product-section">
+                <h1 class="text-center mb-4">Search Results</h1>
+                <div class="row row-cols-1 g-4">
+                    {% for item in all_search_items %}
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-3">
+                                    <a href="{% url 'products:detail' item.product_id %}">
+                                        <img src="{{ item.product_image.url }}" class="img-fluid rounded-start" alt="{{ item.product_name }}">
+                                    </a>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <a href="{% url 'products:detail' item.product_id %}">
+                                            <h5 class="card-title">{{ item.product_name }}</h5>
+                                        </a>
+                                        <p class="card-text">
+                                            <span class="text-warning">★★★★★</span> 53 reviews
+                                        </p>
+                                        <p>Price: {{ item.product_price }}</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    {% if item.product_quantity > 0 %}
+                                    <a href="{% url 'cart:add_to_cart' item.product_id %}">
+                                        <button class="btn btn-success">Add to Cart</button>
+                                    </a>
+                                    {% else %}
+                                    <button class="btn btn-danger" disabled>Out of Stock</button>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <div class="col">
+                        <p class="text-center text-muted">No products match your search.</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            {%else%}
+            
+            <section class="product-section">
+                <h1 class="text-center mb-4">Search Results</h1>
+                <div class="row row-cols-1 g-4">
+                    {% for item in all_search_items %}
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-3">
+                                    <a href="{% url 'products:detail' item.product_id %}">
+                                        <img src="{{ item.product_image.url }}" class="img-fluid rounded-start" alt="{{ item.product_name }}">
+                                    </a>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <a href="{% url 'products:detail' item.product_id %}">
+                                            <h5 class="card-title">{{ item.product_name }}</h5>
+                                        </a>
+                                        <p class="card-text">
+                                            <span class="text-warning">★★★★★</span> 53 reviews
+                                        </p>
+                                        <p>Price: {{ item.product_price }}</p>
+                                      
+                                    </div>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    {% if item.product_quantity > 0 %}
+                                    <a href="{% url 'cart:add_to_cart' item.product_id %}">
+                                        <button class="btn btn-success">Add to Cart</button>
+                                    </a>
+                                    {% else %}
+                                    <button class="btn btn-danger" disabled>Out of Stock</button>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <div class="col">
+                        <p class="text-center text-muted">No products match your search.</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            {%endif%}
+
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            {% block footer_block %}
+            <!-- Optional: include 'includes/footer.html' here -->
+            {% endblock %}
+        </footer>
+    </div>
+</body>
+</html>
+{% endblock %}

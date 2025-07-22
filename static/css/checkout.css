@@ -1,0 +1,59 @@
+body {
+    background-color: #f8f9fa;
+  }
+
+  label{
+    font-size: 14px !important;
+    font-weight: 600;
+  }
+
+  .checkoutform input{
+    font-size: 14px !important;
+  }
+
+  .card {
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Hide arrows in Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+  .form-control {
+    border-radius: 8px;
+  }
+
+  .btn-primary {
+    background-color: #198754;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .btn-primary:hover {
+    background-color: #146c43;
+  }
+
+  table {
+    font-size: 18px;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .order-summary img {
+    border-radius: 8px;
+  }
+
+  .order-total {
+    font-size: 22px;
+    font-weight: bold;
+  }

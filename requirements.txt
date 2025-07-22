@@ -1,0 +1,35 @@
+# Core Dependencies
+Django>=4.2,<5.0
+djangorestframework>=3.14.0
+
+# Database
+psycopg2>=2.9.9  # PostgreSQL (remove if using SQLite)
+
+# Machine Learning & Image Processing
+numpy>=1.24.0
+pandas>=1.5.3
+scikit-learn>=1.2.2
+opencv-python>=4.8.1.78  # Image-based search
+Pillow>=10.0.0  # Image processing
+
+# Deep Learning (for Image-Based Search & Recommendation)
+tensorflow>=2.15.0
+tensorflow-hub>=0.15.0  # If using pre-trained models
+tensorflow-addons>=0.21.0  # Extra utilities
+
+# Natural Language Processing (NLP) & Search
+fuzzywuzzy>=0.18.0  # String matching
+python-levenshtein>=0.12.2  # Required for fuzzywuzzy
+django-haystack>=3.2.2  # Full-text search integration
+
+# Payment Gateway Integration
+requests>=2.31.0  # PayU API calls
+
+# Authentication & Security
+django-allauth>=0.60.0  # Social authentication
+djangorestframework-simplejwt>=5.3.0  # JWT authentication
+
+# Deployment & Optimization
+gunicorn>=21.2.0  # Production WSGI server
+whitenoise>=6.6.0  # Static file serving
+python-dotenv>=1.0.0  # Environment variable management

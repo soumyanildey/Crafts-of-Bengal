@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crafts of Bengal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Crafts of Bengal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CraftLens</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          <li class="nav-item">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <button class="btn btn-outline-secondary" type="button">Search</button>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-cart"></i> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Filter Section -->
+      <div class="col-md-3 mb-4">
+        <div class="card p-3 shadow-sm">
+          <h4>Filters</h4>
+          <hr>
+          <div class="mb-3">
+            <h5>Category</h5>
+            <div>
+              <input type="checkbox" id="handicrafts"> <label for="handicrafts">Handicrafts</label><br>
+              <input type="checkbox" id="textiles"> <label for="textiles">Textiles</label><br>
+              <input type="checkbox" id="jewelry"> <label for="jewelry">Jewelry</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <h5>Price Range</h5>
+            <input type="range" class="form-range" min="0" max="5000" step="100" id="priceRange">
+            <div class="d-flex justify-content-between">
+              <span>₹0</span>
+              <span>₹5000+</span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <h5>Ratings</h5>
+            <div>
+              <input type="radio" name="rating" id="fourStar"> <label for="fourStar">4 & Above</label><br>
+              <input type="radio" name="rating" id="threeStar"> <label for="threeStar">3 & Above</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <h5>Type</h5>
+            <div>
+              <input type="checkbox" id="handmade"> <label for="handmade">Handmade</label><br>
+              <input type="checkbox" id="machineMade"> <label for="machineMade">Machine Made</label>
+            </div>
+          </div>
+          <div>
+            <h5>Availability</h5>
+            <div>
+              <input type="checkbox" id="inStock"> <label for="inStock">In Stock</label><br>
+              <input type="checkbox" id="outOfStock"> <label for="outOfStock">Out of Stock</label>
+            </div>
+          </div>
+          <button class="btn btn-primary mt-3" id="applyFilters">Apply Filters</button>
+        </div>
+      </div>
+
+      <!-- Products Section -->
+      <div class="col-md-9">
+        <div class="row g-4" id="productList">
+          <!-- Product 1 -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1609748340041-f5d61e061ebc?q=80&w=1609" class="card-img-top" alt="Product 1">
+              <div class="card-body">
+                <h5 class="card-title">Product 1</h5>
+                <p class="card-text">Price: ₹500</p>
+                <p class="card-text">Material: Cotton</p>
+                <p class="card-text">Size: Medium</p>
+                <p class="card-text">Review: ★★★★☆</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1572470176170-98fa8abcb741?q=80&w=1587" class="card-img-top" alt="Product 2">
+              <div class="card-body">
+                <h5 class="card-title">Product 2</h5>
+                <p class="card-text">Price: ₹800</p>
+                <p class="card-text">Material: Silk</p>
+                <p class="card-text">Size: Large</p>
+                <p class="card-text">Review: ★★★★★</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1609748340041-f5d61e061ebc?q=80&w=1609" class="card-img-top" alt="Product 3">
+              <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Price: ₹1,200</p>
+                <p class="card-text">Material: Wood</p>
+                <p class="card-text">Size: Small</p>
+                <p class="card-text">Review: ★★★☆☆</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more products -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1609748340041-f5d61e061ebc?q=80&w=1609" class="card-img-top" alt="Product 3">
+              <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Price: ₹1,200</p>
+                <p class="card-text">Material: Wood</p>
+                <p class="card-text">Size: Small</p>
+                <p class="card-text">Review: ★★★☆☆</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1609748340041-f5d61e061ebc?q=80&w=1609" class="card-img-top" alt="Product 3">
+              <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Price: ₹1,200</p>
+                <p class="card-text">Material: Wood</p>
+                <p class="card-text">Size: Small</p>
+                <p class="card-text">Review: ★★★☆☆</p>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat similarstructure for additional products -->
+           <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1609748340041-f5d61e061ebc?q=80&w=1609" class="card-img-top" alt="Product 3">
+              <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Price: ₹1,200</p>
+                <p class="card-text">Material: Wood</p>
+                <p class="card-text">Size: Small</p>
+                <p class="card-text">Review: ★★★☆☆</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1609748340041-f5d61e061ebc?q=80&w=1609" class="card-img-top" alt="Product 3">
+              <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Price: ₹1,200</p>
+                <p class="card-text">Material: Wood</p>
+                <p class="card-text">Size: Small</p>
+                <p class="card-text">Review: ★★★☆☆</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1609748340041-f5d61e061ebc?q=80&w=1609" class="card-img-top" alt="Product 3">
+              <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Price: ₹1,200</p>
+                <p class="card-text">Material: Wood</p>
+                <p class="card-text">Size: Small</p>
+                <p class="card-text">Review: ★★★☆☆</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="https://images.unsplash.com/photo-1609748340041-f5d61e061ebc?q=80&w=1609" class="card-img-top" alt="Product 3">
+              <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Price: ₹1,200</p>
+                <p class="card-text">Material: Wood</p>
+                <p class="card-text">Size: Small</p>
+                <p class="card-text">Review: ★★★☆☆</p>
+              </div>
+            </div>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('applyFilters').addEventListener('click', () => {
+      alert('Filters applied! Implement filtering logic using JavaScript.');
+    });
+  </script>
+</body>
+</html>

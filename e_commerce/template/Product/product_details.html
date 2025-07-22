@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'Home/index.html' %}
+{% block body_block %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/product_details_style.css' %}">
+    <title>{{ products.product_name }}</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        .row {
+            justify-content: center;
+        }
+        .rating {
+            background-color: #28a745; /* Green */
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+        }
+
+        .product-name h2, .product-description p {
+            color: #444;
+        }
+
+        .product-name h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .product-description p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .slider img {
+            width: 70%;
+            height: 90%;
+            border-radius: 30px;
+            border: 4px solid goldenrod;
+            padding: 20px;
+        }
+
+        .btn-custom {
+            background: linear-gradient(145deg, #0062cc, #004b8c);
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-custom:hover {
+            background: linear-gradient(145deg, #0056b3, #003d80);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.05);
+        }
+
+        .side-panel {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 350px;
+            height: 100%;
+            background-color: #fff;
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 20px;
+            overflow-y: auto;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .side-panel.show-panel {
+            transform: translateX(0);
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 999;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .overlay.show-overlay {
+            display: block;
+            opacity: 1;
+        }
+
+        .cart-product {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .cart-product img {
+            max-width: 60px;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+
+        .quantity-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-input {
+            width: 40px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .btn-quantity {
+            background-color: #f0f1f6;
+            border: 1px solid #ddd;
+            padding: 6px 10px;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn-quantity:hover {
+            background-color: #e3e4e8;
+        }
+
+        .price-update {
+            font-weight: bold;
+            color: #0062cc;
+        }
+
+        .scrollable-div {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .scrollable-div .card {
+            width: 200px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border-radius: 12px;
+        }
+
+        .scrollable-div .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .scrollable-div .card img {
+            border-radius: 12px 12px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Image Section -->
+            <div class="col-md-6">
+                <div class="slider">
+                    <div class="slides">
+                        <img src="{{ products.product_image.url }}" alt="Product Image 1" class="img-fluid m-3">
+                        <img src="{{ products.product_image.url }}" alt="Product Image 2" class="img-fluid m-3">
+                        <img src="{{ products.product_image.url }}" alt="Product Image 3" class="img-fluid m-3">
+                    </div>
+                    <button class="btn btn-light prev" onclick="prevSlide()">❮</button>
+                    <button class="btn btn-light next" onclick="nextSlide()">❯</button>
+                </div>
+                <div class="text-center mt-3">
+                    <h5>Mini Description Or Anything</h5>
+                </div>
+            </div>
+
+            <!-- Product Details Section -->
+            <div class="col-md-6">
+                <div class="product-name mb-3">
+                    <h2>{{ products.product_name }}</h2>
+                    <p><span class="rating">{{ rating }}</span> {{ rating_count }} Ratings & {{ review_count }} Reviews</p>
+                    <p class="price"><strong>₹ {{ products.product_price }}</strong></p>
+                </div>
+
+                <div class="product-description mb-4">
+                    <p>{{ products.product_description }}</p>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <a href="yourcart.html">
+                            <button type="button" class="btn-custom">Buy Now</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="{% url 'cart:add_to_cart' products.product_id %}">
+                            <button type="button" class="btn btn-outline-primary">Add to Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Similar Products Section -->
+        <div class="mt-5">
+            <h3 class="text-center mb-4">Frequently Bought Together</h3>
+            <div class="scrollable-div">
+                {% for items in recommended_items %}
+                    <div class="card">
+                        <a href="{% url 'products:detail' items.product_id %}">
+                            <img src="{{ items.product_image.url }}" class="card-img-top" alt="Product Image">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text text-center">{{ items.product_name }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Side Panel Cart -->
+    <div class="side-panel" id="sidePanel">
+        <div class="panel-content">
+            <div class="d-flex justify-content-between align-items-center p-3">
+                <h3>Your Cart</h3>
+                <button id="closeBtn" class="btn btn-danger btn-sm">Close</button>
+            </div>
+            <div class="cart-products-list p-3">
+                <!-- Example cart product -->
+                <div class="cart-product mb-3">
+                    <img src="gallery/saree_pov_1.jpg" alt="Product Image">
+                    <div class="cart-product-details">
+                        <div class="d-flex justify-content-between">
+                            <h5>Product Name</h5>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="quantity-box">
+                                <button class="btn-quantity">-</button>
+                                <input type="text" class="quantity-input" value="1" readonly>
+                                <button class="btn-quantity">+</button>
+                            </div>
+                            <div class="price-update">₹ 105.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            const slides = document.querySelectorAll('.slides img');
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            slides.forEach((slide) => {
+                slide.style.display = 'none';
+            });
+            slides[slideIndex].style.display = 'block';
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            showSlides();
+        }
+
+        function prevSlide() {
+            slideIndex--;
+            showSlides();
+        }
+
+        // Initially show the first slide
+        showSlides();
+
+        // Side panel cart toggle
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const sidePanel = document.getElementById('sidePanel');
+        const overlay = document.getElementById('overlay');
+
+        openBtn.addEventListener('click', function () {
+            sidePanel.classList.add('show-panel');
+            overlay.classList.add('show-overlay');
+        });
+
+        closeBtn.addEventListener('click', function () {
+            sidePanel.classList.remove('show-panel');
+            overlay.classList.remove('show-overlay');
+        });
+    </script>
+</body>
+{% endblock %}
+
+</html>

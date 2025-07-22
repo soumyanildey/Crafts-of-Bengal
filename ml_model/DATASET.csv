@@ -1,0 +1,868 @@
+Type,User_id,Product Name,Color,Manufacturing Location,Seller,Location,Price,Season,Quantity,Rating,Review
+Teracotta,1,Teracotta 1,Brown,Nabadwip,B2,Siliguri,284.5,Autumn,28,4.1,Good
+Leather Goods,1,Santiniketan Leather 5,Rainbow,Santiniketan,A2,Ultodanga,331.49,Summer,11,4,Good
+Saree,1,Baluchari Saree 3,Light Blue,Bishnupur,B1,Naihati,357.07,Summer,11,3.8,Moderate
+Saree,1,Baluchari Saree 5,Yellow,Bishnupur,B1,Purulia,452.76,Winter,16,3.9,Moderate
+Saree,1,Santipur Tanter Saree 5,Brown,Santipur,A1,Duttapukur,681.99,Rainy,17,4,Good
+Kathi,1,Madur 1,Red,Paschim Medinipur,A3,Nabadwip,189.6,Winter,35,3.5,Moderate
+Saree,1,Baluchari Saree 4,Green,Bishnupur,B1,Raniganj,471.08,Summer,12,4,Good
+Saree,1,Santipur Tanter Saree 7,Orange,Santipur,A1,Nadia,547.99,Winter,24,4.3,Excellent
+Kathi,2,Madur 1,Light Brown,Paschim Medinipur,A3,Bethuadahari,198.6,Automn,28,3.9,Moderate
+Teracotta,2,Teracotta 1,Brown,Nabadwip,B2,Asansol,223.9,Summer,45,3.9,Moderate
+Saree,2,Baluchari Saree 7,Red,Bishnupur,B1,Basirhat,443.58,Summer,20,3.9,Moderate
+Saree,2,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Kolkata,601.99,Summer,12,4.3,Excellent
+Kathi,3,Madur 1,Light Yellow,Paschim Medinipur,A3,Sodepur,199.6,Summer,36,4.1,Good
+Mask,3,Chau Mask 1,Golden,Purulia,B3,Shaymnagar,224.6,Automn,21,4.5,Excellent
+Mask,3,Chau Mask 1,White,Purulia,B3,Muragacha,247.9,Summer,17,4,Good
+Mask,3,Chau Mask 1,Red,Purulia,B3,Debagram,156.4,Spring,36,4.5,Excellent
+Teracotta,3,Teracotta 1,Brown,Nabadwip,B2,Purulia,267.6,Rainy,22,4.3,Excellent
+Leather Goods,3,Santiniketan Leather 1,Orange,Santiniketan,A2,Dumdum,349.66,Winter,12,4.2,Good
+Leather Goods,3,Santiniketan Leather 6,Brown,Santiniketan,A2,Bardhaman,408.81,Spring,16,4.2,Good
+Leather Goods,3,Santiniketan Leather 8,Yellow,Santiniketan,A2,Dumdum,291.54,Winter,12,4.4,Excellent
+Saree,3,Baluchari Saree 8,Dark Green,Bishnupur,B1,Naihati,451.43,Rainy,16,3.9,Moderate
+Saree,3,Santipur Tanter Saree 4,Black,Santipur,A1,Barasat,445.99,Spring,24,4.3,Excellent
+Saree,3,Santipur Tanter Saree 10,White,Santipur,A1,Duttapukur,861.66,Winter,18,4.2,Good
+Leather Goods,4,Santiniketan Leather 2,Blue,Santiniketan,A2,Ultodanga,433.88,Spring,11,4.2,Good
+Leather Goods,4,Santiniketan Leather 5,Rainbow,Santiniketan,A2,Dumdum,359.52,Rainy,5,4.2,Good
+Saree,4,Baluchari Saree 2,Blue,Bishnupur,B1,Purulia,430.34,Rainy,17,4.3,Excellent
+Saree,4,Baluchari Saree 8,Dark Green,Bishnupur,B1,Basirhat,457.18,Summer,13,4.2,Good
+Saree,4,Santipur Tanter Saree 4,Black,Santipur,A1,Nadia,435.99,Spring,11,4,Good
+Saree,4,Santipur Tanter Saree 7,Orange,Santipur,A1,Barasat,542.99,Summer,12,4.3,Excellent
+Kathi,5,Madur 1,Red,Paschim Medinipur,A3,Ultodanga,168.6,Rainy,27,4,Good
+Leather Goods,5,Santiniketan Leather 2,Blue,Santiniketan,A2,Dumdum,427.27,Summer,22,4.3,Excellent
+Saree,5,Baluchari Saree 7,Red,Bishnupur,B1,Raniganj,476.02,Winter,18,4,Good
+Saree,5,Santipur Tanter Saree 4,Black,Santipur,A1,Nadia,415.99,Summer,9,4,Good
+Saree,5,Santipur Tanter Saree 7,Orange,Santipur,A1,Nadia,545.99,Spring,12,3.9,Moderate
+Saree,5,Santipur Tanter Saree 10,White,Santipur,A1,Nadia,853.42,Summer,16,3.7,Moderate
+Kathi,6,Madur 1,Light Brown,Paschim Medinipur,A3,Nabadwip,230.8,Winter,22,3.9,Moderate
+Kathi,6,Madur 1,Light Yellow,Paschim Medinipur,A3,Beharampore,256.1,Winter,31,4.1,Good
+Kathi,6,Madur 1,Light Yellow,Paschim Medinipur,A3,Naihati,189.6,Winter,49,4.2,Good
+Kathi,6,Madur 1,Red,Paschim Medinipur,A3,Nabadwip,264.2,Spring,39,3.6,Moderate
+Mask,6,Chau Mask 1,White,Purulia,B3,Jagadal,248.3,Summer,29,4.2,Good
+Mask,6,Chau Mask 1,Green,Purulia,B3,Shaymnagar,178,Rainy,28,4.4,Excellent
+Mask,6,Chau Mask 1,Golden,Purulia,B3,Muragacha,248.7,Rainy,36,4.1,Good
+Saree,6,Baluchari Saree 4,Green,Bishnupur,B1,Sonarpur,455.93,Summer,14,4.3,Excellent
+Saree,6,Baluchari Saree 6,Brown,Bishnupur,B1,Naihati,528.87,Spring,10,4.1,Good
+Saree,6,Baluchari Saree 10,Orange,Bishnupur,B1,Basirhat,512.77,Spring,13,4.3,Excellent
+Saree,6,Santipur Tanter Saree 5,Brown,Santipur,A1,Nadia,711.99,Spring,12,4.4,Excellent
+Saree,6,Santipur Tanter Saree 6,Green,Santipur,A1,Nadia,721.99,Spring,12,4.2,Good
+Saree,6,Santipur Tanter Saree 7,Orange,Santipur,A1,Kolkata,569.99,Winter,22,4.4,Excellent
+Kathi,7,Madur 1,Light Yellow,Paschim Medinipur,A3,Beharampore,189.3,Summer,28,4.4,Excellent
+Kathi,7,Madur 1,Light Brown,Paschim Medinipur,A3,Sodepur,286.1,Winter,47,4.5,Excellent
+Mask,7,Chau Mask 8,Green,Purulia,B3,Debagram,155.3,Rainy,19,4.5,Excellent
+Teracotta,7,Teracotta 1,Brown,Nabadwip,B2,Hugly,242.5,Spring,12,4,Good
+Leather Goods,7,Santiniketan Leather 1,Orange,Santiniketan,A2,Dumdum,320.25,Rainy,5,4.1,Good
+Leather Goods,7,Santiniketan Leather 4,Yellow,Santiniketan,A2,Dumdum,498.88,Summer,9,4,Good
+Leather Goods,7,Santiniketan Leather 5,Rainbow,Santiniketan,A2,Ultodanga,328.5,Rainy,8,3.8,Moderate
+Leather Goods,7,Santiniketan Leather 9,Brown,Santiniketan,A2,Bardhaman,308.59,Winter,18,3.9,Moderate
+Saree,7,Santipur Tanter Saree 3,Blue,Santipur,A1,Sodepur,715.99,Spring,24,4.5,Excellent
+Saree,7,Santipur Tanter Saree 5,Brown,Santipur,A1,Sodepur,701.99,Summer,11,4.4,Excellent
+Saree,7,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Kolkata,700.91,Rainy,12,4.2,Good
+Kathi,8,Madur 2,Light Yellow,Paschim Medinipur,A3,Krishnagar,244.6,Rainy,25,3.6,Moderate
+Mask,8,Chau Mask 8,Yellow,Purulia,B3,Santipur,188.9,Summer,45,3.8,Moderate
+Mask,8,Chau Mask 8,Yellow,Purulia,B3,Basirhat,238.2,Summer,38,3.6,Moderate
+Saree,8,Baluchari Saree 1,Violet,Bishnupur,B1,Sonarpur,621.99,Rainy,11,4.3,Excellent
+Saree,8,Baluchari Saree 1,Violet,Bishnupur,B1,Naihati,631.99,Spring,6,4,Good
+Saree,8,Baluchari Saree 4,Green,Bishnupur,B1,Naihati,448.47,Rainy,18,4,Good
+Saree,8,Baluchari Saree 10,Orange,Bishnupur,B1,Raniganj,526.36,Winter,18,4.4,Excellent
+Saree,8,Baluchari Saree 10,Orange,Bishnupur,B1,Raniganj,503.02,Rainy,19,4.2,Good
+Saree,8,Santipur Tanter Saree 2,Violet,Santipur,A1,Kolkata,749.99,Winter,12,4,Good
+Kathi,9,Madur 2,Light Brown,Paschim Medinipur,A3,Khardha,249.2,Rainy,17,4.5,Excellent
+Teracotta,9,Teracotta 1,Brown,Nabadwip,B2,Siliguri,284.6,Rainy,45,4.1,Good
+Leather Goods,9,Santiniketan Leather 8,Yellow,Santiniketan,A2,Bardhaman,282.11,Rainy,17,4.3,Excellent
+Saree,9,Santipur Tanter Saree 3,Blue,Santipur,A1,Sodepur,689.99,Rainy,8,4,Good
+Saree,9,Santipur Tanter Saree 10,White,Santipur,A1,Kolkata,834.94,Rainy,9,4.2,Good
+Kathi,10,Madur 2,Light Brown,Paschim Medinipur,A3,Khardha,287.9,Rainy,48,4,Good
+Teracotta,10,Teracotta 1,Brown,Nabadwip,B2,Duttapukur,264.4,Autumn,29,3.9,Moderate
+Leather Goods,10,Santiniketan Leather 4,Yellow,Santiniketan,A2,Bardhaman,517.74,Winter,8,3.7,Moderate
+Saree,10,Baluchari Saree 2,Blue,Bishnupur,B1,Raniganj,461.58,Spring,19,3.8,Moderate
+Saree,10,Baluchari Saree 7,Red,Bishnupur,B1,Naihati,445.04,Spring,10,3.8,Moderate
+Kathi,11,Madur 2,Light Brown,Paschim Medinipur,A3,Beharampore,212.6,Automn,16,4.5,Excellent
+Kathi,11,Madur 2,Red,Paschim Medinipur,A3,Dumdum,256.2,Spring,17,4.1,Good
+Teracotta,11,Teracotta 1,Brown,Nabadwip,B2,Durgapur,214.6,Rainy,21,4,Good
+Saree,11,Baluchari Saree 6,Brown,Bishnupur,B1,Purulia,481.74,Rainy,18,4.4,Excellent
+Saree,11,Santipur Tanter Saree 6,Green,Santipur,A1,Barasat,718.99,Winter,8,4,Good
+Saree,11,Santipur Tanter Saree 10,White,Santipur,A1,Sodepur,869.87,Summer,11,3.9,Moderate
+Mask,12,Chau Mask 8,Green,Purulia,B3,Basirhat,170.8,Summer,14,4,Good
+Teracotta,12,Teracotta 2 ,Brown,Nabadwip,B2,Siliguri,230.8,Rainy,25,4.5,Excellent
+Teracotta,12,Teracotta 2 ,Brown,Nabadwip,B2,Hugly,265.9,Spring,35,3.6,Moderate
+Leather Goods,12,Santiniketan Leather 3,Orange,Santiniketan,A2,Ultodanga,445.69,Summer,11,4.4,Excellent
+Saree,12,Baluchari Saree 2,Blue,Bishnupur,B1,Purulia,445.96,Winter,16,4.4,Excellent
+Saree,12,Baluchari Saree 5,Yellow,Bishnupur,B1,Raniganj,464.04,Summer,13,4.4,Excellent
+Saree,12,Baluchari Saree 7,Red,Bishnupur,B1,Purulia,482.74,Spring,13,3.9,Moderate
+Saree,12,Santipur Tanter Saree 2,Violet,Santipur,A1,Kolkata,719.99,Summer,15,4.2,Good
+Saree,12,Santipur Tanter Saree 4,Black,Santipur,A1,Duttapukur,429.99,Winter,24,4.2,Good
+Saree,12,Santipur Tanter Saree 6,Green,Santipur,A1,Nadia,721.99,Winter,24,3.8,Moderate
+Saree,12,Santipur Tanter Saree 7,Orange,Santipur,A1,Barasat,565.99,Winter,17,4.2,Good
+Mask,13,Chau Mask 8,White,Purulia,B3,Shaymnagar,160.5,Summer,28,4.2,Good
+Saree,13,Santipur Tanter Saree 4,Black,Santipur,A1,Duttapukur,439.99,Summer,22,3.8,Moderate
+Mask,14,Chau Mask 8,Yellow,Purulia,B3,Santipur,247.1,Automn,39,3.6,Moderate
+Mask,14,Chau Mask 8,Red,Purulia,B3,Shaymnagar,246.2,Rainy,30,4.1,Good
+Saree,14,Baluchari Saree 8,Dark Green,Bishnupur,B1,Raniganj,445.68,Rainy,8,4.3,Excellent
+Saree,14,Baluchari Saree 10,Orange,Bishnupur,B1,Purulia,473.99,Rainy,9,4.2,Good
+Saree,14,Santipur Tanter Saree 4,Black,Santipur,A1,Kolkata,459.99,Winter,17,3.8,Moderate
+Mask,15,Chau Mask 8,Golden,Purulia,B3,Debagram,223.8,Rainy,18,3.6,Moderate
+Teracotta,15,Teracotta 2 ,Brown,Nabadwip,B2,Barasat,278.5,Autumn,30,3.6,Moderate
+Teracotta,15,Teracotta 2 ,Brown,Nabadwip,B2,Bandale,263.3,Autumn,28,3.8,Moderate
+Leather Goods,15,Santiniketan Leather 4,Yellow,Santiniketan,A2,Dumdum,543.91,Winter,19,4.5,Excellent
+Leather Goods,15,Santiniketan Leather 9,Brown,Santiniketan,A2,Ultodanga,353.81,Winter,10,3.8,Moderate
+Saree,15,Baluchari Saree 1,Violet,Bishnupur,B1,Raniganj,601.99,Winter,9,3.9,Moderate
+Saree,15,Baluchari Saree 8,Dark Green,Bishnupur,B1,Purulia,449.36,Rainy,11,4.4,Excellent
+Saree,15,Santipur Tanter Saree 7,Orange,Santipur,A1,Duttapukur,535.99,Winter,8,4.3,Excellent
+Saree,15,Santipur Tanter Saree 8,Yellow,Santipur,A1,Nadia,806.83,Winter,24,4.2,Good
+Kathi,16,Madur 2,Red,Paschim Medinipur,A3,Barackpore,254.5,Spring,12,3.9,Moderate
+Kathi,16,Madur 2,Light Brown,Paschim Medinipur,A3,Palasy,259.2,Rainy,15,4.1,Good
+Kathi,16,Madur 2,Light Brown,Paschim Medinipur,A3,Naihati,255.8,Winter,13,4.1,Good
+Mask,16,Chau Mask 8,Red,Purulia,B3,Santipur,181.6,Summer,14,4.5,Excellent
+Leather Goods,16,Santiniketan Leather 3,Orange,Santiniketan,A2,Bardhaman,437.67,Spring,16,3.9,Moderate
+Saree,16,Baluchari Saree 5,Yellow,Bishnupur,B1,Naihati,463.14,Winter,16,4.2,Good
+Saree,16,Baluchari Saree 10,Orange,Bishnupur,B1,Basirhat,506.54,Summer,10,4.3,Excellent
+Saree,16,Santipur Tanter Saree 3,Blue,Santipur,A1,Nadia,685.99,Rainy,22,4,Good
+Saree,16,Santipur Tanter Saree 7,Orange,Santipur,A1,Kolkata,539.99,Summer,25,3.8,Moderate
+Saree,16,Santipur Tanter Saree 8,Yellow,Santipur,A1,Kolkata,814.04,Summer,25,4.2,Good
+Kathi,17,Madur 3,Light Brown,Paschim Medinipur,A3,Nabadwip,277.2,Rainy,29,4.1,Good
+Kathi,17,Madur 3,Red,Paschim Medinipur,A3,Sealdaha,265.8,Winter,37,4,Good
+Leather Goods,17,Santiniketan Leather 1,Orange,Santiniketan,A2,Bardhaman,326.63,Spring,16,3.9,Moderate
+Leather Goods,17,Santiniketan Leather 3,Orange,Santiniketan,A2,Dumdum,441.65,Winter,5,3.8,Moderate
+Saree,17,Baluchari Saree 1,Violet,Bishnupur,B1,Basirhat,651.99,Winter,12,4.3,Excellent
+Saree,17,Baluchari Saree 8,Dark Green,Bishnupur,B1,Naihati,491.36,Spring,9,4.4,Excellent
+Saree,17,Santipur Tanter Saree 7,Orange,Santipur,A1,Sodepur,555.99,Winter,17,3.9,Moderate
+Saree,17,Santipur Tanter Saree 8,Yellow,Santipur,A1,Barasat,810.72,Winter,17,3.8,Moderate
+Saree,17,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Sodepur,696.35,Summer,11,3.9,Moderate
+Mask,18,Chau Mask 8,Yellow,Purulia,B3,Jagadal,245.5,Winter,29,3.7,Moderate
+Teracotta,18,Teracotta 2 ,Brown,Nabadwip,B2,Barasat,221.5,Spring,27,3.9,Moderate
+Teracotta,18,Teracotta 2 ,Brown,Nabadwip,B2,Purulia,247.7,Winter,24,4,Good
+Teracotta,18,Teracotta 2 ,Brown,Nabadwip,B2,Siliguri,249.9,Summer,45,4,Good
+Leather Goods,18,Santiniketan Leather 3,Orange,Santiniketan,A2,Ultodanga,421.69,Rainy,8,3.8,Moderate
+Leather Goods,18,Santiniketan Leather 5,Rainbow,Santiniketan,A2,Dumdum,342.54,Winter,5,4.1,Good
+Saree,18,Baluchari Saree 6,Brown,Bishnupur,B1,Raniganj,521.63,Spring,11,4.3,Excellent
+Saree,18,Baluchari Saree 7,Red,Bishnupur,B1,Purulia,458.27,Winter,20,3.9,Moderate
+Saree,18,Baluchari Saree 8,Dark Green,Bishnupur,B1,Raniganj,492.17,Spring,9,4.5,Excellent
+Saree,18,Santipur Tanter Saree 5,Brown,Santipur,A1,Kolkata,729.99,Summer,25,4.5,Excellent
+Saree,18,Santipur Tanter Saree 5,Brown,Santipur,A1,Duttapukur,741.99,Summer,22,4,Good
+Saree,18,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Duttapukur,705.75,Summer,22,3.8,Moderate
+Kathi,19,Madur 3,Light Yellow,Paschim Medinipur,A3,Belgharea,245.9,Winter,31,4.1,Good
+Mask,19,Chau Mask 2,Green,Purulia,B3,Muragacha,173.6,Rainy,15,4.5,Excellent
+Teracotta,19,Teracotta 3,Brown,Nabadwip,B2,Asansol,287.7,Rainy,41,4,Good
+Teracotta,19,Teracotta 3,Brown,Nabadwip,B2,Asansol,254.5,Summer,26,3.8,Moderate
+Teracotta,19,Teracotta 3,Brown,Nabadwip,B2,Barasat,272.3,Autumn,21,4,Good
+Leather Goods,19,Santiniketan Leather 9,Brown,Santiniketan,A2,Bardhaman,347.68,Summer,16,4,Good
+Saree,19,Baluchari Saree 2,Blue,Bishnupur,B1,Raniganj,446.09,Summer,15,4.3,Excellent
+Saree,19,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Duttapukur,631.99,Winter,6,3.9,Moderate
+Kathi,20,Madur 3,Light Brown,Paschim Medinipur,A3,Khardha,256.8,Spring,19,3.5,Moderate
+Mask,20,Chau Mask 2,Yellow,Purulia,B3,Muragacha,246.2,Summer,25,3.6,Moderate
+Teracotta,20,Teracotta 3,Brown,Nabadwip,B2,Siliguri,241.6,Winter,38,3.7,Moderate
+Teracotta,20,Teracotta 3,Brown,Nabadwip,B2,Bandale,253.3,Summer,42,4,Good
+Leather Goods,20,Santiniketan Leather 4,Yellow,Santiniketan,A2,Ultodanga,534.68,Winter,14,3.7,Moderate
+Leather Goods,20,Santiniketan Leather 7,Black,Santiniketan,A2,Ultodanga,430.51,Rainy,11,3.8,Moderate
+Leather Goods,20,Santiniketan Leather 8,Yellow,Santiniketan,A2,Dumdum,294.29,Summer,18,4,Good
+Leather Goods,20,Santiniketan Leather 10,Blue,Santiniketan,A2,Ultodanga,394.17,Summer,11,4.1,Good
+Leather Goods,20,Santiniketan Leather 10,Blue,Santiniketan,A2,Bardhaman,373.33,Rainy,9,4.2,Good
+Saree,20,Baluchari Saree 4,Green,Bishnupur,B1,Basirhat,429.94,Rainy,17,4.4,Excellent
+Saree,20,Baluchari Saree 4,Green,Bishnupur,B1,Sonarpur,445.96,Rainy,17,3.8,Moderate
+Saree,20,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Barasat,571.99,Rainy,6,4,Good
+Kathi,21,Madur 3,Red,Paschim Medinipur,A3,Belgharea,179.5,Spring,24,3.9,Moderate
+Mask,21,Chau Mask 2,Yellow,Purulia,B3,Debagram,194.3,Winter,25,4.2,Good
+Mask,21,Chau Mask 2,White,Purulia,B3,Basirhat,182.9,Summer,18,3.5,Moderate
+Mask,21,Chau Mask 7,Red,Purulia,B3,Basirhat,239.6,Summer,10,4,Good
+Teracotta,21,Teracotta 3,Brown,Nabadwip,B2,Purulia,244.6,Winter,31,3.9,Moderate
+Teracotta,21,Teracotta 3,Brown,Nabadwip,B2,Asansol,224.8,Winter,14,3.8,Moderate
+Leather Goods,21,Santiniketan Leather 9,Brown,Santiniketan,A2,Ultodanga,334.14,Summer,11,4.5,Excellent
+Saree,21,Baluchari Saree 4,Green,Bishnupur,B1,Sonarpur,464.4,Spring,20,4,Good
+Kathi,22,Madur 3,Light Brown,Paschim Medinipur,A3,Belgharea,259.4,Rainy,19,4.3,Excellent
+Teracotta,22,Teracotta 3,Brown,Nabadwip,B2,Durgapur,241.8,Autumn,20,3.6,Moderate
+Saree,22,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Kolkata,651.99,Winter,12,3.9,Moderate
+Saree,22,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Nadia,581.99,Summer,8,4.1,Good
+Saree,22,Santipur Tanter Saree 3,Blue,Santipur,A1,Sodepur,691.99,Summer,9,3.8,Moderate
+Saree,22,Santipur Tanter Saree 3,Blue,Santipur,A1,Barasat,671.99,Summer,12,4,Good
+Saree,22,Santipur Tanter Saree 10,White,Santipur,A1,Kolkata,852.54,Spring,17,4.4,Excellent
+Kathi,23,Madur 3,Red,Paschim Medinipur,A3,Bardhaman,214.9,Automn,27,4.2,Good
+Kathi,23,Madur 3,Red,Paschim Medinipur,A3,Palasy,192.1,Winter,22,3.8,Moderate
+Kathi,23,Madur 4,Red,Paschim Medinipur,A3,Sodepur,214.6,Summer,33,4.5,Excellent
+Mask,23,Chau Mask 7,White,Purulia,B3,Santipur,215.9,Rainy,24,4.1,Good
+Mask,23,Chau Mask 7,Golden,Purulia,B3,Basirhat,228.9,Rainy,27,3.8,Moderate
+Mask,23,Chau Mask 7,Green,Purulia,B3,Santipur,157.8,Rainy,39,4.5,Excellent
+Teracotta,23,Teracotta 3,Brown,Nabadwip,B2,Duttapukur,254.3,Rainy,23,4.5,Excellent
+Leather Goods,23,Santiniketan Leather 2,Blue,Santiniketan,A2,Bardhaman,431.41,Summer,15,4,Good
+Leather Goods,23,Santiniketan Leather 3,Orange,Santiniketan,A2,Dumdum,441.65,Spring,15,4.1,Good
+Saree,23,Baluchari Saree 6,Brown,Bishnupur,B1,Basirhat,484.91,Winter,11,3.9,Moderate
+Saree,23,Baluchari Saree 9,Purple,Bishnupur,B1,Basirhat,560.73,Summer,18,3.9,Moderate
+Saree,23,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Sodepur,591.99,Spring,17,4.3,Excellent
+Saree,23,Santipur Tanter Saree 2,Violet,Santipur,A1,Duttapukur,721.99,Winter,13,4,Good
+Kathi,24,Madur 4,Light Brown,Paschim Medinipur,A3,Dumdum,180.75,Rainy,10,4,Good
+Mask,24,Chau Mask 7,Yellow,Purulia,B3,Santipur,215.9,Rainy,19,4.5,Excellent
+Mask,24,Chau Mask 7,Golden,Purulia,B3,Debagram,233.6,Rainy,38,4.1,Good
+Leather Goods,24,Santiniketan Leather 1,Orange,Santiniketan,A2,Bardhaman,331.63,Winter,8,4,Good
+Saree,24,Baluchari Saree 2,Blue,Bishnupur,B1,Sonarpur,467.47,Spring,17,4.1,Good
+Saree,24,Baluchari Saree 3,Light Blue,Bishnupur,B1,Raniganj,362.6,Summer,10,4.1,Good
+Saree,24,Baluchari Saree 9,Purple,Bishnupur,B1,Basirhat,538.4,Winter,13,4.4,Excellent
+Saree,24,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Barasat,621.99,Winter,5,4.3,Excellent
+Saree,24,Santipur Tanter Saree 4,Black,Santipur,A1,Barasat,489.99,Winter,17,3.9,Moderate
+Saree,24,Santipur Tanter Saree 5,Brown,Santipur,A1,Sodepur,681.99,Rainy,22,3.8,Moderate
+Kathi,25,Madur 4,Light Yellow,Paschim Medinipur,A3,Nabadwip,245.3,Winter,22,4.5,Excellent
+Kathi,25,Madur 4,Light Brown,Paschim Medinipur,A3,Krishnagar,287.2,Rainy,13,4.4,Excellent
+Mask,25,Chau Mask 7,Green,Purulia,B3,Basirhat,158.9,Rainy,37,4.5,Excellent
+Mask,25,Chau Mask 7,Yellow,Purulia,B3,Debagram,191.4,Spring,15,3.9,Moderate
+Teracotta,25,Teracotta 3,Brown,Nabadwip,B2,Asansol,288.7,Autumn,24,4.5,Excellent
+Teracotta,25,Teracotta 3,Brown,Nabadwip,B2,Durgapur,223.5,Spring,16,3.9,Moderate
+Leather Goods,25,Santiniketan Leather 3,Orange,Santiniketan,A2,Bardhaman,422.67,Summer,15,3.9,Moderate
+Leather Goods,25,Santiniketan Leather 7,Black,Santiniketan,A2,Dumdum,446.37,Winter,8,4.1,Good
+Leather Goods,25,Santiniketan Leather 10,Blue,Santiniketan,A2,Dumdum,420.62,Winter,18,4,Good
+Saree,25,Baluchari Saree 4,Green,Bishnupur,B1,Raniganj,453.17,Rainy,17,4.3,Excellent
+Saree,25,Baluchari Saree 7,Red,Bishnupur,B1,Purulia,453.59,Summer,11,3.9,Moderate
+Saree,25,Baluchari Saree 9,Purple,Bishnupur,B1,Purulia,552.85,Spring,16,4.4,Excellent
+Saree,25,Baluchari Saree 10,Orange,Bishnupur,B1,Basirhat,513.54,Winter,15,4.3,Excellent
+Saree,25,Santipur Tanter Saree 3,Blue,Santipur,A1,Duttapukur,735.99,Spring,25,3.7,Moderate
+Kathi,26,Madur 4,Red,Paschim Medinipur,A3,Naihati,225.6,Summer,38,4.5,Excellent
+Mask,26,Chau Mask 7,Red,Purulia,B3,Basirhat,189.2,Spring,34,3.6,Moderate
+Saree,26,Baluchari Saree 8,Dark Green,Bishnupur,B1,Sonarpur,461.95,Winter,17,3.9,Moderate
+Saree,26,Baluchari Saree 10,Orange,Bishnupur,B1,Naihati,508.04,Summer,18,3.8,Moderate
+Saree,26,Santipur Tanter Saree 4,Black,Santipur,A1,Barasat,405.99,Rainy,17,3.8,Moderate
+Kathi,27,Madur 4,Light Brown,Paschim Medinipur,A3,Bardhaman,190.25,Summer,15,4.1,Good
+Kathi,27,Madur 4,Light Brown,Paschim Medinipur,A3,Palasy,199.5,Summer,29,4.3,Excellent
+Mask,27,Chau Mask 7,White,Purulia,B3,Debagram,213.6,Rainy,28,4.3,Excellent
+Mask,27,Chau Mask 2,Golden,Purulia,B3,Santipur,228.9,Rainy,39,4.2,Good
+Teracotta,27,Teracotta 3,Brown,Nabadwip,B2,Purulia,213.8,Spring,28,3.9,Moderate
+Saree,27,Baluchari Saree 2,Blue,Bishnupur,B1,Naihati,446.81,Spring,14,3.7,Moderate
+Saree,27,Baluchari Saree 5,Yellow,Bishnupur,B1,Purulia,464.5,Summer,9,4.5,Excellent
+Saree,27,Baluchari Saree 8,Dark Green,Bishnupur,B1,Naihati,446.74,Winter,15,3.9,Moderate
+Saree,27,Baluchari Saree 9,Purple,Bishnupur,B1,Naihati,575.69,Spring,10,3.7,Moderate
+Saree,27,Santipur Tanter Saree 5,Brown,Santipur,A1,Sodepur,731.99,Winter,17,4,Good
+Kathi,28,Madur 4,Red,Paschim Medinipur,A3,Khardha,278.4,Winter,23,4,Good
+Mask,28,Chau Mask 2,Yellow,Purulia,B3,Santipur,239.9,Summer,22,3.6,Moderate
+Teracotta,28,Teracotta 3,Brown,Nabadwip,B2,Barasat,268.2,Rainy,20,4.3,Excellent
+Leather Goods,28,Santiniketan Leather 9,Brown,Santiniketan,A2,Bardhaman,329.82,Rainy,12,4.2,Good
+Saree,28,Baluchari Saree 10,Orange,Bishnupur,B1,Raniganj,509.67,Summer,19,4.3,Excellent
+Saree,28,Santipur Tanter Saree 2,Violet,Santipur,A1,Sodepur,671.99,Rainy,8,4,Good
+Kathi,29,Madur 5,Red,Paschim Medinipur,A3,Palasy,210.4,Spring,14,4,Good
+Kathi,29,Madur 5,Light Yellow,Paschim Medinipur,A3,Krishnagar,242.7,Winter,18,4.1,Good
+Teracotta,29,Teracotta 4,Brown,Nabadwip,B2,Purulia,210.4,Autumn,19,4,Good
+Teracotta,29,Teracotta 4,Brown,Nabadwip,B2,Bandale,210.4,Winter,14,4,Good
+Teracotta,29,Teracotta 4,Brown,Nabadwip,B2,Purulia,285.3,Rainy,29,4,Good
+Teracotta,29,Teracotta 4,Brown,Nabadwip,B2,Duttapukur,254.4,Summer,25,4,Good
+Teracotta,29,Teracotta 4,Brown,Nabadwip,B2,Siliguri,259.8,Summer,20,4,Good
+Leather Goods,29,Santiniketan Leather 1,Orange,Santiniketan,A2,Ultodanga,340.25,Rainy,8,4.5,Excellent
+Leather Goods,29,Santiniketan Leather 5,Rainbow,Santiniketan,A2,Bardhaman,329.37,Summer,15,3.7,Moderate
+Leather Goods,29,Santiniketan Leather 5,Rainbow,Santiniketan,A2,Bardhaman,358.64,Spring,16,3.8,Moderate
+Saree,29,Baluchari Saree 2,Blue,Bishnupur,B1,Basirhat,433.43,Rainy,19,4.5,Excellent
+Saree,29,Baluchari Saree 2,Blue,Bishnupur,B1,Basirhat,464.44,Spring,16,3.7,Moderate
+Saree,29,Santipur Tanter Saree 8,Yellow,Santipur,A1,Barasat,820.72,Spring,6,3.9,Moderate
+Kathi,30,Madur 5,Light Yellow,Paschim Medinipur,A3,Naihati,255.2,Automn,23,3.8,Moderate
+Kathi,30,Madur 5,Light Yellow,Paschim Medinipur,A3,Dumdum,197.3,Winter,17,4.1,Good
+Mask,30,Chau Mask 2,Red,Purulia,B3,Basirhat,196.4,Winter,18,4,Good
+Mask,30,Chau Mask 2,Red,Purulia,B3,Jagadal,239.4,Summer,20,4,Good
+Teracotta,30,Teracotta 4,Brown,Nabadwip,B2,Purulia,289.6,Spring,34,4,Good
+Leather Goods,30,Santiniketan Leather 7,Black,Santiniketan,A2,Ultodanga,456.25,Winter,12,4.2,Good
+Leather Goods,30,Santiniketan Leather 10,Blue,Santiniketan,A2,Bardhaman,439.52,Spring,13,3.7,Moderate
+Saree,30,Santipur Tanter Saree 3,Blue,Santipur,A1,Kolkata,719.99,Winter,12,4.2,Good
+Kathi,31,Madur 5,Light Yellow,Paschim Medinipur,A3,Dumdum,156.2,Winter,34,3.9,Moderate
+Kathi,31,Madur 5,Red,Paschim Medinipur,A3,Dumdum,218.7,Summer,41,3.9,Moderate
+Mask,31,Chau Mask 2,Yellow,Purulia,B3,Muragacha,186.3,Summer,25,3.9,Moderate
+Mask,31,Chau Mask 2,Red,Purulia,B3,Basirhat,214.9,Spring,25,4.4,Excellent
+Leather Goods,31,Santiniketan Leather 7,Black,Santiniketan,A2,Dumdum,472.7,Spring,12,4.4,Excellent
+Saree,31,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Kolkata,591.99,Rainy,10,4.5,Excellent
+Saree,31,Santipur Tanter Saree 3,Blue,Santipur,A1,Kolkata,679.99,Summer,6,4.3,Excellent
+Saree,31,Santipur Tanter Saree 4,Black,Santipur,A1,Nadia,435.99,Winter,25,4.2,Good
+Kathi,32,Madur 5,Red,Paschim Medinipur,A3,Belgharea,260.5,Automn,25,3.9,Moderate
+Mask,32,Chau Mask 2,Green,Purulia,B3,Basirhat,150.2,Spring,10,3.5,Moderate
+Mask,32,Chau Mask 2,Golden,Purulia,B3,Muragacha,211.5,Automn,26,4.2,Good
+Teracotta,32,Teracotta 4,Brown,Nabadwip,B2,Duttapukur,289.3,Rainy,41,4,Good
+Teracotta,32,Teracotta 4,Brown,Nabadwip,B2,Purulia,257.7,Summer,20,4,Good
+Leather Goods,32,Santiniketan Leather 7,Black,Santiniketan,A2,Bardhaman,461.35,Spring,9,4.4,Excellent
+Leather Goods,32,Santiniketan Leather 9,Brown,Santiniketan,A2,Ultodanga,326.74,Spring,9,4.1,Good
+Saree,32,Baluchari Saree 3,Light Blue,Bishnupur,B1,Raniganj,387.09,Spring,12,4.5,Excellent
+Saree,32,Baluchari Saree 6,Brown,Bishnupur,B1,Basirhat,496.44,Spring,19,3.9,Moderate
+Saree,32,Santipur Tanter Saree 7,Orange,Santipur,A1,Duttapukur,508.99,Rainy,17,3.8,Moderate
+Mask,33,Chau Mask 2,Red,Purulia,B3,Muragacha,198.6,Winter,16,4.3,Excellent
+Mask,33,Chau Mask 2,Yellow,Purulia,B3,Jagadal,193.8,Spring,11,3.9,Moderate
+Teracotta,33,Teracotta 4,Brown,Nabadwip,B2,Purulia,294.6,Rainy,36,4.2,Good
+Leather Goods,33,Santiniketan Leather 6,Brown,Santiniketan,A2,Ultodanga,411.32,Spring,18,3.8,Moderate
+Saree,33,Baluchari Saree 1,Violet,Bishnupur,B1,Purulia,621.99,Spring,5,4.4,Excellent
+Saree,33,Baluchari Saree 6,Brown,Bishnupur,B1,Naihati,486.54,Winter,13,4,Good
+Saree,33,Baluchari Saree 8,Dark Green,Bishnupur,B1,Purulia,459.64,Winter,15,3.8,Moderate
+Saree,33,Santipur Tanter Saree 3,Blue,Santipur,A1,Nadia,715.99,Spring,11,4.1,Good
+Saree,33,Santipur Tanter Saree 4,Black,Santipur,A1,Sodepur,419.99,Rainy,22,3.9,Moderate
+Kathi,34,Madur 5,Red,Paschim Medinipur,A3,Sodepur,277.4,Rainy,41,4.4,Excellent
+Mask,34,Chau Mask 2,White,Purulia,B3,Debagram,227.5,Winter,45,3.5,Moderate
+Mask,34,Chau Mask 2,Golden,Purulia,B3,Basirhat,224.6,Winter,41,4.2,Good
+Teracotta,34,Teracotta 4,Brown,Nabadwip,B2,Barasat,265.3,Rainy,23,4,Good
+Leather Goods,34,Santiniketan Leather 2,Blue,Santiniketan,A2,Bardhaman,396.41,Rainy,7,4.4,Excellent
+Leather Goods,34,Santiniketan Leather 7,Black,Santiniketan,A2,Dumdum,428.36,Rainy,19,3.7,Moderate
+Leather Goods,34,Santiniketan Leather 10,Blue,Santiniketan,A2,Dumdum,406.55,Summer,16,4.3,Excellent
+Saree,34,Baluchari Saree 2,Blue,Bishnupur,B1,Sonarpur,453.57,Summer,13,4.1,Good
+Saree,34,Baluchari Saree 5,Yellow,Bishnupur,B1,Sonarpur,436.86,Rainy,10,4.4,Excellent
+Saree,34,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Barasat,591.99,Summer,17,4.1,Good
+Saree,34,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Nadia,561.99,Rainy,12,4.1,Good
+Saree,34,Santipur Tanter Saree 8,Yellow,Santipur,A1,Duttapukur,799.66,Rainy,17,3.7,Moderate
+Kathi,35,Madur 5,Light Brown,Paschim Medinipur,A3,Belgharea,283.6,Automn,35,4.5,Excellent
+Mask,35,Chau Mask 2,Red,Purulia,B3,Jagadal,187.3,Winter,14,4.2,Good
+Mask,35,Chau Mask 2,Green,Purulia,B3,Basirhat,196.5,Summer,21,4.2,Good
+Teracotta,35,Teracotta 5,Brown,Nabadwip,B2,Hugly,220.3,Summer,18,4.2,Good
+Teracotta,35,Teracotta 5,Brown,Nabadwip,B2,Siliguri,266.5,Winter,21,4,Good
+Leather Goods,35,Santiniketan Leather 6,Brown,Santiniketan,A2,Ultodanga,378.43,Rainy,19,4,Good
+Saree,35,Baluchari Saree 5,Yellow,Bishnupur,B1,Sonarpur,475.97,Spring,14,4,Good
+Saree,35,Baluchari Saree 6,Brown,Bishnupur,B1,Basirhat,482.25,Rainy,20,4.3,Excellent
+Saree,35,Baluchari Saree 7,Red,Bishnupur,B1,Naihati,468.72,Summer,11,4.2,Good
+Saree,35,Santipur Tanter Saree 2,Violet,Santipur,A1,Nadia,711.99,Summer,8,4.2,Good
+Saree,35,Santipur Tanter Saree 3,Blue,Santipur,A1,Barasat,711.99,Winter,8,4.5,Excellent
+Saree,35,Santipur Tanter Saree 5,Brown,Santipur,A1,Barasat,671.99,Rainy,17,4.3,Excellent
+Mask,36,Chau Mask 2,Green,Purulia,B3,Jagadal,175.1,Winter,27,4.4,Excellent
+Teracotta,36,Teracotta 5,Brown,Nabadwip,B2,Purulia,271.4,Autumn,23,4,Good
+Leather Goods,36,Santiniketan Leather 6,Brown,Santiniketan,A2,Bardhaman,418.59,Winter,10,4.5,Excellent
+Leather Goods,36,Santiniketan Leather 6,Brown,Santiniketan,A2,Bardhaman,419.1,Summer,7,3.8,Moderate
+Saree,36,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Kolkata,710.91,Summer,25,4.2,Good
+Saree,36,Santipur Tanter Saree 10,White,Santipur,A1,Duttapukur,845.23,Spring,18,3.9,Moderate
+Teracotta,37,Teracotta 5,Brown,Nabadwip,B2,Kulti,262.2,Autumn,24,3.9,Moderate
+Leather Goods,37,Santiniketan Leather 6,Brown,Santiniketan,A2,Dumdum,368.5,Rainy,8,4.4,Excellent
+Saree,37,Santipur Tanter Saree 4,Black,Santipur,A1,Duttapukur,440.99,Spring,25,4,Good
+Kathi,38,Madur 5,Light Yellow,Paschim Medinipur,A3,Sealdaha,215.2,Summer,24,4.2,Good
+Mask,38,Chau Mask 2,Yellow,Purulia,B3,Santipur,190.2,Summer,46,3.8,Moderate
+Leather Goods,38,Santiniketan Leather 10,Blue,Santiniketan,A2,Ultodanga,373.59,Rainy,18,3.7,Moderate
+Saree,38,Baluchari Saree 6,Brown,Bishnupur,B1,Naihati,494.9,Summer,17,3.7,Moderate
+Saree,38,Baluchari Saree 9,Purple,Bishnupur,B1,Raniganj,542.52,Winter,12,3.7,Moderate
+Saree,38,Baluchari Saree 9,Purple,Bishnupur,B1,Naihati,535.1,Rainy,12,4.3,Excellent
+Saree,38,Santipur Tanter Saree 6,Green,Santipur,A1,Sodepur,701.99,Summer,11,4.4,Excellent
+Kathi,39,Madur 6,Red,Paschim Medinipur,A3,Krishnagar,225.6,Rainy,13,3.5,Moderate
+Teracotta,39,Teracotta 5,Brown,Nabadwip,B2,Duttapukur,254.8,Winter,15,4.3,Excellent
+Teracotta,39,Teracotta 5,Brown,Nabadwip,B2,Duttapukur,289.6,Autumn,19,4.2,Good
+Teracotta,39,Teracotta 5,Brown,Nabadwip,B2,Asansol,251.1,Summer,43,4,Good
+Leather Goods,39,Santiniketan Leather 1,Orange,Santiniketan,A2,Bardhaman,321.63,Summer,15,4.3,Excellent
+Leather Goods,39,Santiniketan Leather 6,Brown,Santiniketan,A2,Dumdum,414.68,Spring,10,4,Good
+Saree,39,Baluchari Saree 2,Blue,Bishnupur,B1,Basirhat,455.42,Winter,15,4.1,Good
+Saree,39,Baluchari Saree 4,Green,Bishnupur,B1,Sonarpur,434.5,Winter,9,4.5,Excellent
+Saree,39,Baluchari Saree 5,Yellow,Bishnupur,B1,Raniganj,501.56,Spring,13,4.2,Good
+Saree,39,Santipur Tanter Saree 6,Green,Santipur,A1,Duttapukur,661.99,Rainy,17,4.4,Excellent
+Kathi,40,Madur 6,Red,Paschim Medinipur,A3,Ultodanga,289.3,Rainy,16,3.5,Moderate
+Mask,40,Chau Mask 2,Green,Purulia,B3,Sonarpur,177.5,Rainy,17,4.4,Excellent
+Mask,40,Chau Mask 2,Red,Purulia,B3,Sonarpur,197.3,Winter,19,4,Good
+Teracotta,40,Teracotta 5,Brown,Nabadwip,B2,Hugly,246.6,Winter,29,4,Good
+Teracotta,40,Teracotta 5,Brown,Nabadwip,B2,Asansol,261.1,Summer,25,3.8,Moderate
+Saree,40,Baluchari Saree 5,Yellow,Bishnupur,B1,Basirhat,447.52,Rainy,12,4.4,Excellent
+Saree,40,Baluchari Saree 9,Purple,Bishnupur,B1,Sonarpur,581.78,Spring,18,4.5,Excellent
+Saree,40,Santipur Tanter Saree 2,Violet,Santipur,A1,Barasat,701.99,Winter,8,4,Good
+Saree,40,Santipur Tanter Saree 7,Orange,Santipur,A1,Sodepur,535.99,Summer,11,3.7,Moderate
+Saree,40,Santipur Tanter Saree 8,Yellow,Santipur,A1,Kolkata,824.04,Winter,22,4.4,Excellent
+Saree,40,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Barasat,710.43,Rainy,17,4,Good
+Kathi,41,Madur 6,Red,Paschim Medinipur,A3,Bardhaman,300.5,Summer,12,3.8,Moderate
+Kathi,41,Madur 6,Red,Paschim Medinipur,A3,Naihati,289.6,Rainy,45,3.6,Moderate
+Kathi,41,Madur 6,Light Yellow,Paschim Medinipur,A3,Naihati,266.8,Summer,33,4.1,Good
+Kathi,41,Madur 6,Light Yellow,Paschim Medinipur,A3,Sealdaha,294.3,Summer,23,4.5,Excellent
+Teracotta,41,Teracotta 5,Brown,Nabadwip,B2,Kulti,225.6,Winter,18,3.7,Moderate
+Saree,41,Baluchari Saree 6,Brown,Bishnupur,B1,Purulia,492.77,Summer,10,3.9,Moderate
+Saree,41,Baluchari Saree 8,Dark Green,Bishnupur,B1,Sonarpur,457.18,Summer,17,4.1,Good
+Saree,41,Baluchari Saree 8,Dark Green,Bishnupur,B1,Basirhat,468.61,Spring,15,4.4,Excellent
+Saree,41,Santipur Tanter Saree 3,Blue,Santipur,A1,Barasat,725.99,Spring,24,4.4,Excellent
+Mask,42,Chau Mask 2,White,Purulia,B3,Muragacha,220.6,Spring,36,4.4,Excellent
+Mask,42,Chau Mask 2,Red,Purulia,B3,Basirhat,245.5,Automn,25,3.9,Moderate
+Teracotta,42,Teracotta 6,Brown,Nabadwip,B2,Siliguri,222.9,Spring,15,3.8,Moderate
+Leather Goods,42,Santiniketan Leather 10,Blue,Santiniketan,A2,Bardhaman,429.99,Winter,9,3.9,Moderate
+Saree,42,Baluchari Saree 10,Orange,Bishnupur,B1,Sonarpur,492.9,Spring,9,4.4,Excellent
+Saree,42,Baluchari Saree 10,Orange,Bishnupur,B1,Naihati,534.52,Spring,11,4.3,Excellent
+Saree,42,Santipur Tanter Saree 10,White,Santipur,A1,Nadia,854.02,Winter,10,4.2,Good
+Mask,43,Chau Mask 2,Green,Purulia,B3,Sonarpur,200.6,Automn,15,3.7,Moderate
+Teracotta,43,Teracotta 6,Brown,Nabadwip,B2,Kulti,220.3,Winter,21,4.4,Excellent
+Teracotta,43,Teracotta 6,Brown,Nabadwip,B2,Hugly,226.3,Winter,12,4.4,Excellent
+Leather Goods,43,Santiniketan Leather 4,Yellow,Santiniketan,A2,Ultodanga,481.61,Rainy,17,4.3,Excellent
+Saree,43,Baluchari Saree 7,Red,Bishnupur,B1,Basirhat,464.98,Spring,12,4.3,Excellent
+Saree,43,Santipur Tanter Saree 2,Violet,Santipur,A1,Nadia,711.99,Winter,7,4.3,Excellent
+Saree,43,Santipur Tanter Saree 5,Brown,Santipur,A1,Barasat,741.99,Spring,6,4.2,Good
+Saree,43,Santipur Tanter Saree 7,Orange,Santipur,A1,Barasat,503.99,Rainy,17,4.2,Good
+Teracotta,44,Teracotta 6,Brown,Nabadwip,B2,Duttapukur,233.2,Winter,30,3.9,Moderate
+Saree,44,Baluchari Saree 3,Light Blue,Bishnupur,B1,Sonarpur,350.28,Summer,10,4.5,Excellent
+Saree,44,Santipur Tanter Saree 2,Violet,Santipur,A1,Nadia,691.99,Spring,11,4.4,Excellent
+Saree,44,Santipur Tanter Saree 4,Black,Santipur,A1,Duttapukur,400.99,Rainy,24,3.8,Moderate
+Saree,44,Santipur Tanter Saree 5,Brown,Santipur,A1,Barasat,711.99,Summer,12,4.3,Excellent
+Kathi,45,Madur 6,Red,Paschim Medinipur,A3,Krishnagar,212.8,Rainy,15,4.1,Good
+Kathi,45,Madur 6,Light Yellow,Paschim Medinipur,A3,Naihati,236.8,Rainy,18,4,Good
+Mask,45,Chau Mask 2,Yellow,Purulia,B3,Muragacha,287.1,Winter,19,3.5,Moderate
+Leather Goods,45,Santiniketan Leather 1,Orange,Santiniketan,A2,Ultodanga,356.73,Winter,17,3.5,Moderate
+Saree,45,Baluchari Saree 1,Violet,Bishnupur,B1,Raniganj,601.99,Summer,9,3.9,Moderate
+Saree,45,Baluchari Saree 1,Violet,Bishnupur,B1,Basirhat,651.99,Spring,12,4.1,Good
+Saree,45,Baluchari Saree 2,Blue,Bishnupur,B1,Raniganj,430.88,Winter,19,4.2,Good
+Saree,45,Baluchari Saree 5,Yellow,Bishnupur,B1,Purulia,460.41,Rainy,15,4.3,Excellent
+Saree,45,Santipur Tanter Saree 3,Blue,Santipur,A1,Barasat,665.99,Rainy,6,4.3,Excellent
+Saree,45,Santipur Tanter Saree 6,Green,Santipur,A1,Sodepur,745.99,Spring,7,4.2,Good
+Saree,45,Santipur Tanter Saree 8,Yellow,Santipur,A1,Sodepur,795.26,Rainy,22,4.3,Excellent
+Kathi,46,Madur 6,Light Yellow,Paschim Medinipur,A3,Barackpore,287.9,Rainy,24,3.7,Moderate
+Mask,46,Chau Mask 2,Yellow,Purulia,B3,Shaymnagar,184.5,Automn,39,3.8,Moderate
+Teracotta,46,Teracotta 6,Brown,Nabadwip,B2,Barasat,228.3,Summer,10,3.5,Moderate
+Teracotta,46,Teracotta 6,Brown,Nabadwip,B2,Durgapur,215,Winter,37,3.7,Moderate
+Teracotta,46,Teracotta 6,Brown,Nabadwip,B2,Bandale,227.8,Winter,17,3.5,Moderate
+Teracotta,46,Teracotta 6,Brown,Nabadwip,B2,Durgapur,275.2,Rainy,41,4.2,Good
+Leather Goods,46,Santiniketan Leather 2,Blue,Santiniketan,A2,Ultodanga,447.88,Winter,17,4.3,Excellent
+Saree,46,Baluchari Saree 1,Violet,Bishnupur,B1,Raniganj,601.99,Spring,9,4.1,Good
+Saree,46,Baluchari Saree 3,Light Blue,Bishnupur,B1,Purulia,371.1,Winter,15,4.1,Good
+Saree,46,Baluchari Saree 3,Light Blue,Bishnupur,B1,Basirhat,360.52,Summer,13,3.7,Moderate
+Saree,46,Baluchari Saree 5,Yellow,Bishnupur,B1,Naihati,483.38,Summer,10,4.1,Good
+Saree,46,Santipur Tanter Saree 6,Green,Santipur,A1,Kolkata,719.99,Summer,25,4.3,Excellent
+Saree,46,Santipur Tanter Saree 8,Yellow,Santipur,A1,Barasat,780.72,Rainy,17,4.1,Good
+Mask,47,Chau Mask 2,Golden,Purulia,B3,Debagram,210.7,Rainy,18,4.1,Good
+Mask,47,Chau Mask 2,Golden,Purulia,B3,Santipur,237.4,Summer,28,4.2,Good
+Teracotta,47,Teracotta 6,Brown,Nabadwip,B2,Duttapukur,240.9,Spring,15,4,Good
+Leather Goods,47,Santiniketan Leather 7,Black,Santiniketan,A2,Dumdum,473.49,Summer,13,4,Good
+Saree,47,Baluchari Saree 2,Blue,Bishnupur,B1,Naihati,438.15,Rainy,17,3.7,Moderate
+Saree,47,Baluchari Saree 4,Green,Bishnupur,B1,Purulia,435.13,Rainy,14,3.9,Moderate
+Saree,47,Baluchari Saree 5,Yellow,Bishnupur,B1,Purulia,465.35,Spring,18,4.4,Excellent
+Saree,47,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Nadia,561.99,Spring,11,4.2,Good
+Mask,48,Chau Mask 2,Yellow,Purulia,B3,Muragacha,237.5,Winter,35,4.2,Good
+Mask,48,Chau Mask 2,Red,Purulia,B3,Shaymnagar,198.4,Winter,13,4,Good
+Teracotta,48,Teracotta 6,Brown,Nabadwip,B2,Purulia,245.6,Winter,25,3.5,Moderate
+Teracotta,48,Teracotta 6,Brown,Nabadwip,B2,Siliguri,228.1,Spring,45,4,Good
+Leather Goods,48,Santiniketan Leather 10,Blue,Santiniketan,A2,Dumdum,403.84,Spring,18,3.9,Moderate
+Saree,48,Baluchari Saree 3,Light Blue,Bishnupur,B1,Purulia,371.2,Summer,15,4.4,Excellent
+Saree,48,Baluchari Saree 4,Green,Bishnupur,B1,Raniganj,460.17,Spring,14,4.1,Good
+Saree,48,Baluchari Saree 8,Dark Green,Bishnupur,B1,Naihati,475.72,Summer,11,4.4,Excellent
+Saree,48,Baluchari Saree 10,Orange,Bishnupur,B1,Naihati,485.12,Rainy,14,3.8,Moderate
+Saree,48,Santipur Tanter Saree 10,White,Santipur,A1,Barasat,871.44,Summer,10,3.8,Moderate
+Mask,49,Chau Mask 2,Green,Purulia,B3,Sonarpur,233.9,Summer,31,4.2,Good
+Saree,49,Baluchari Saree 3,Light Blue,Bishnupur,B1,Purulia,346.08,Spring,10,4.3,Excellent
+Saree,49,Baluchari Saree 7,Red,Bishnupur,B1,Naihati,463.2,Winter,19,4.2,Good
+Saree,49,Baluchari Saree 8,Dark Green,Bishnupur,B1,Purulia,472.59,Summer,11,4.3,Excellent
+Saree,49,Baluchari Saree 10,Orange,Bishnupur,B1,Sonarpur,500.08,Winter,14,4.1,Good
+Saree,49,Santipur Tanter Saree 3,Blue,Santipur,A1,Nadia,691.99,Summer,17,4.3,Excellent
+Saree,49,Santipur Tanter Saree 5,Brown,Santipur,A1,Nadia,721.99,Winter,24,4.1,Good
+Saree,49,Santipur Tanter Saree 6,Green,Santipur,A1,Kolkata,741.99,Spring,13,3.9,Moderate
+Kathi,50,Madur 6,Red,Paschim Medinipur,A3,Bethuadahari,300.9,Automn,28,4.5,Excellent
+Saree,50,Baluchari Saree 1,Violet,Bishnupur,B1,Naihati,631.99,Summer,6,4.2,Good
+Saree,50,Baluchari Saree 3,Light Blue,Bishnupur,B1,Sonarpur,347.79,Rainy,9,4.2,Good
+Saree,50,Baluchari Saree 10,Orange,Bishnupur,B1,Sonarpur,499.02,Summer,13,4,Good
+Saree,50,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Sodepur,591.99,Rainy,8,4,Good
+Saree,50,Santipur Tanter Saree 3,Blue,Santipur,A1,Nadia,712.99,Winter,7,4.2,Good
+Saree,50,Santipur Tanter Saree 3,Blue,Santipur,A1,Kolkata,679.99,Rainy,24,4.5,Excellent
+Saree,50,Santipur Tanter Saree 10,White,Santipur,A1,Kolkata,882.36,Winter,11,3.8,Moderate
+Kathi,51,Madur 6,Red,Paschim Medinipur,A3,Barackpore,239.6,Spring,11,3.6,Moderate
+Kathi,51,Madur 6,Light Brown,Paschim Medinipur,A3,Nabadwip,179.1,Rainy,27,3.8,Moderate
+Mask,51,Chau Mask 2,Yellow,Purulia,B3,Shaymnagar,248.2,Automn,34,3.5,Moderate
+Teracotta,51,Teracotta 6,Brown,Nabadwip,B2,Kulti,220.3,Winter,17,4,Good
+Teracotta,51,Teracotta 6,Brown,Nabadwip,B2,Siliguri,235.9,Rainy,35,4.5,Excellent
+Teracotta,51,Teracotta 6,Brown,Nabadwip,B2,Kulti,265.3,Summer,22,3.9,Moderate
+Leather Goods,51,Santiniketan Leather 2,Blue,Santiniketan,A2,Ultodanga,419.88,Rainy,8,3.9,Moderate
+Saree,51,Baluchari Saree 9,Purple,Bishnupur,B1,Purulia,535.01,Winter,19,4.1,Good
+Saree,51,Santipur Tanter Saree 4,Black,Santipur,A1,Barasat,449.99,Summer,12,4,Good
+Teracotta,52,Teracotta 6,Brown,Nabadwip,B2,Kulti,279.6,Rainy,13,4.5,Excellent
+Leather Goods,52,Santiniketan Leather 5,Rainbow,Santiniketan,A2,Ultodanga,372.95,Spring,19,4.5,Excellent
+Leather Goods,52,Santiniketan Leather 8,Yellow,Santiniketan,A2,Dumdum,315.03,Spring,18,4,Good
+Saree,52,Baluchari Saree 1,Violet,Bishnupur,B1,Basirhat,651.99,Summer,12,4.5,Excellent
+Saree,52,Baluchari Saree 6,Brown,Bishnupur,B1,Sonarpur,497.21,Spring,11,4.2,Good
+Kathi,53,Madur 6,Light Yellow,Paschim Medinipur,A3,Sealdaha,298.6,Automn,24,4.3,Excellent
+Kathi,53,Madur 7,Light Brown,Paschim Medinipur,A3,Palasy,187.6,Automn,26,3.5,Moderate
+Mask,53,Chau Mask 2,White,Purulia,B3,Santipur,223.8,Winter,35,4.4,Excellent
+Mask,53,Chau Mask 2,Golden,Purulia,B3,Jagadal,241.6,Winter,28,4.2,Good
+Teracotta,53,Teracotta 6,Brown,Nabadwip,B2,Bandale,285.5,Summer,12,4.4,Excellent
+Teracotta,53,Teracotta 6,Brown,Nabadwip,B2,Durgapur,250.1,Summer,41,4,Good
+Teracotta,53,Teracotta 6,Brown,Nabadwip,B2,Asansol,282.5,Rainy,15,4.4,Excellent
+Leather Goods,53,Santiniketan Leather 5,Rainbow,Santiniketan,A2,Ultodanga,358.09,Winter,8,3.7,Moderate
+Saree,53,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Kolkata,591.99,Spring,22,3.7,Moderate
+Saree,53,Santipur Tanter Saree 7,Orange,Santipur,A1,Duttapukur,552.99,Summer,22,4.3,Excellent
+Kathi,54,Madur 7,Light Brown,Paschim Medinipur,A3,Ultodanga,240.5,Winter,25,4,Good
+Kathi,54,Madur 7,Red,Paschim Medinipur,A3,Beharampore,255.9,Winter,27,4,Good
+Mask,54,Chau Mask 2,Golden,Purulia,B3,Debagram,238.6,Automn,36,3.7,Moderate
+Mask,54,Chau Mask 2,Green,Purulia,B3,Shaymnagar,219.2,Winter,32,4.5,Excellent
+Teracotta,54,Teracotta 6,Brown,Nabadwip,B2,Durgapur,289.6,Autumn,29,4.3,Excellent
+Leather Goods,54,Santiniketan Leather 3,Orange,Santiniketan,A2,Bardhaman,445.67,Winter,7,4,Good
+Leather Goods,54,Santiniketan Leather 8,Yellow,Santiniketan,A2,Bardhaman,302.08,Winter,15,3.9,Moderate
+Saree,54,Baluchari Saree 9,Purple,Bishnupur,B1,Sonarpur,555.69,Winter,15,4.4,Excellent
+Saree,54,Santipur Tanter Saree 3,Blue,Santipur,A1,Sodepur,709.99,Winter,17,3.9,Moderate
+Saree,54,Santipur Tanter Saree 5,Brown,Santipur,A1,Barasat,711.99,Winter,8,4.2,Good
+Saree,54,Santipur Tanter Saree 7,Orange,Santipur,A1,Nadia,499.99,Rainy,8,4,Good
+Kathi,55,Madur 7,Red,Paschim Medinipur,A3,Dumdum,250.36,Spring,20,4.2,Good
+Mask,55,Chau Mask 2,Yellow,Purulia,B3,Sonarpur,192.6,Spring,16,3.9,Moderate
+Mask,55,Chau Mask 5,Red,Purulia,B3,Santipur,215.8,Spring,24,4.5,Excellent
+Leather Goods,55,Santiniketan Leather 2,Blue,Santiniketan,A2,Dumdum,399.27,Rainy,5,3.5,Moderate
+Leather Goods,55,Santiniketan Leather 4,Yellow,Santiniketan,A2,Bardhaman,499.58,Summer,5,4.3,Excellent
+Leather Goods,55,Santiniketan Leather 4,Yellow,Santiniketan,A2,Dumdum,531.49,Spring,18,4.1,Good
+Leather Goods,55,Santiniketan Leather 8,Yellow,Santiniketan,A2,Ultodanga,316.27,Summer,9,4.1,Good
+Saree,55,Baluchari Saree 3,Light Blue,Bishnupur,B1,Naihati,325.25,Rainy,13,4.3,Excellent
+Saree,55,Santipur Tanter Saree 8,Yellow,Santipur,A1,Sodepur,815.26,Winter,17,4,Good
+Saree,55,Santipur Tanter Saree 10,White,Santipur,A1,Kolkata,866.46,Summer,15,4.1,Good
+Kathi,56,Madur 7,Light Brown,Paschim Medinipur,A3,Sodepur,246.2,Automn,31,4,Good
+Kathi,56,Madur 7,Red,Paschim Medinipur,A3,Ultodanga,233.5,Spring,14,4.3,Excellent
+Mask,56,Chau Mask 5,White,Purulia,B3,Sonarpur,213.5,Spring,25,4.5,Excellent
+Teracotta,56,Teracotta 6,Brown,Nabadwip,B2,Durgapur,243.5,Winter,20,3.8,Moderate
+Saree,56,Baluchari Saree 2,Blue,Bishnupur,B1,Naihati,449.83,Summer,11,4.5,Excellent
+Saree,56,Baluchari Saree 4,Green,Bishnupur,B1,Naihati,456.5,Summer,20,3.8,Moderate
+Saree,56,Baluchari Saree 10,Orange,Bishnupur,B1,Purulia,486.6,Winter,14,4.5,Excellent
+Saree,56,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Barasat,571.99,Spring,24,4.5,Excellent
+Saree,56,Santipur Tanter Saree 10,White,Santipur,A1,Barasat,862.18,Rainy,10,4.5,Excellent
+Kathi,57,Madur 7,Red,Paschim Medinipur,A3,Sodepur,189.5,Summer,23,4.2,Good
+Teracotta,57,Teracotta 6,Brown,Nabadwip,B2,Purulia,254.8,Rainy,17,4.5,Excellent
+Teracotta,57,Teracotta 6,Brown,Nabadwip,B2,Kulti,290.6,Summer,32,4.3,Excellent
+Saree,57,Baluchari Saree 1,Violet,Bishnupur,B1,Raniganj,601.99,Rainy,9,4.5,Excellent
+Kathi,58,Madur 7,Red,Paschim Medinipur,A3,Belgharea,287.6,Rainy,43,3.6,Moderate
+Mask,58,Chau Mask 5,White,Purulia,B3,Jagadal,185.9,Automn,25,4.5,Excellent
+Mask,58,Chau Mask 5,Golden,Purulia,B3,Sonarpur,204.6,Summer,20,4.4,Excellent
+Teracotta,58,Teracotta 6,Brown,Nabadwip,B2,Asansol,278.8,Rainy,15,4.5,Excellent
+Saree,58,Baluchari Saree 7,Red,Bishnupur,B1,Sonarpur,441.21,Winter,18,3.8,Moderate
+Saree,58,Baluchari Saree 7,Red,Bishnupur,B1,Sonarpur,446.02,Summer,13,4.4,Excellent
+Saree,58,Baluchari Saree 8,Dark Green,Bishnupur,B1,Basirhat,494.88,Winter,20,4.2,Good
+Saree,58,Santipur Tanter Saree 2,Violet,Santipur,A1,Duttapukur,711.99,Spring,22,4.1,Good
+Saree,58,Santipur Tanter Saree 4,Black,Santipur,A1,Sodepur,429.99,Summer,9,3.8,Moderate
+Saree,58,Santipur Tanter Saree 8,Yellow,Santipur,A1,Sodepur,805.26,Summer,11,4.1,Good
+Kathi,59,Madur 7,Light Brown,Paschim Medinipur,A3,Khardha,288.2,Spring,21,4,Good
+Kathi,59,Madur 7,Light Yellow,Paschim Medinipur,A3,Belgharea,179.6,Winter,41,4.3,Excellent
+Kathi,59,Madur 7,Red,Paschim Medinipur,A3,Krishnagar,198.6,Winter,28,3.8,Moderate
+Teracotta,59,Teracotta 6,Brown,Nabadwip,B2,Asansol,233.5,Spring,24,4.5,Excellent
+Teracotta,59,Teracotta 6,Brown,Nabadwip,B2,Duttapukur,282.6,Summer,32,4,Good
+Saree,59,Santipur Tanter Saree 2,Violet,Santipur,A1,Duttapukur,731.99,Summer,12,3.8,Moderate
+Saree,59,Santipur Tanter Saree 5,Brown,Santipur,A1,Kolkata,759.99,Winter,12,4.2,Good
+Kathi,60,Madur 7,Red,Paschim Medinipur,A3,Palasy,197.6,Winter,32,3.6,Moderate
+Teracotta,60,Teracotta 6,Brown,Nabadwip,B2,Siliguri,254.3,Summer,20,3.9,Moderate
+Teracotta,60,Teracotta 7,Brown,Nabadwip,B2,Duttapukur,286.5,Rainy,35,4.4,Excellent
+Teracotta,60,Teracotta 7,Brown,Nabadwip,B2,Asansol,241.6,Winter,21,3.9,Moderate
+Leather Goods,60,Santiniketan Leather 3,Orange,Santiniketan,A2,Ultodanga,445.69,Spring,19,4.3,Excellent
+Leather Goods,60,Santiniketan Leather 8,Yellow,Santiniketan,A2,Dumdum,307.38,Rainy,14,4,Good
+Saree,60,Baluchari Saree 2,Blue,Bishnupur,B1,Sonarpur,460.93,Winter,9,4.1,Good
+Saree,60,Santipur Tanter Saree 2,Violet,Santipur,A1,Sodepur,691.99,Summer,7,3.8,Moderate
+Saree,60,Santipur Tanter Saree 5,Brown,Santipur,A1,Duttapukur,731.99,Winter,17,4.3,Excellent
+Kathi,61,Madur 7,Red,Paschim Medinipur,A3,Ultodanga,214.6,Rainy,41,3.7,Moderate
+Teracotta,61,Teracotta 7,Brown,Nabadwip,B2,Siliguri,239.8,Autumn,23,3.6,Moderate
+Teracotta,61,Teracotta 7,Brown,Nabadwip,B2,Purulia,269.9,Autumn,31,3.6,Moderate
+Teracotta,61,Teracotta 7,Brown,Nabadwip,B2,Siliguri,242.9,Winter,22,3.8,Moderate
+Leather Goods,61,Santiniketan Leather 7,Black,Santiniketan,A2,Bardhaman,466.12,Summer,7,3.9,Moderate
+Saree,61,Baluchari Saree 4,Green,Bishnupur,B1,Basirhat,441.58,Summer,15,4.5,Excellent
+Saree,61,Baluchari Saree 5,Yellow,Bishnupur,B1,Basirhat,459.52,Spring,11,4,Good
+Saree,61,Santipur Tanter Saree 5,Brown,Santipur,A1,Kolkata,761.99,Spring,13,4.5,Excellent
+Saree,61,Santipur Tanter Saree 10,White,Santipur,A1,Sodepur,838.88,Winter,17,4.1,Good
+Mask,62,Chau Mask 5,Yellow,Purulia,B3,Jagadal,189.2,Summer,26,4.2,Good
+Mask,62,Chau Mask 5,Red,Purulia,B3,Santipur,202.6,Summer,14,4.3,Excellent
+Teracotta,62,Teracotta 7,Brown,Nabadwip,B2,Durgapur,252.4,Summer,43,3.8,Moderate
+Teracotta,62,Teracotta 7,Brown,Nabadwip,B2,Barasat,223.9,Winter,14,4,Good
+Saree,62,Baluchari Saree 3,Light Blue,Bishnupur,B1,Basirhat,357.19,Rainy,17,3.8,Moderate
+Saree,62,Baluchari Saree 4,Green,Bishnupur,B1,Naihati,450.25,Winter,9,3.9,Moderate
+Saree,62,Santipur Tanter Saree 8,Yellow,Santipur,A1,Sodepur,825.26,Spring,7,3.9,Moderate
+Kathi,63,Madur 7,Light Yellow,Paschim Medinipur,A3,Sealdaha,179.2,Summer,24,4.5,Excellent
+Mask,63,Chau Mask 3,Yellow,Purulia,B3,Sonarpur,228.5,Spring,23,4,Good
+Teracotta,63,Teracotta 7,Brown,Nabadwip,B2,Durgapur,268.2,Winter,28,4,Good
+Saree,63,Baluchari Saree 3,Light Blue,Bishnupur,B1,Basirhat,344.94,Winter,15,4.4,Excellent
+Saree,63,Baluchari Saree 6,Brown,Bishnupur,B1,Sonarpur,505.55,Rainy,19,4.3,Excellent
+Saree,63,Baluchari Saree 8,Dark Green,Bishnupur,B1,Sonarpur,488.38,Spring,9,4.1,Good
+Saree,63,Baluchari Saree 10,Orange,Bishnupur,B1,Purulia,531.69,Spring,8,4.2,Good
+Saree,63,Santipur Tanter Saree 6,Green,Santipur,A1,Barasat,661.99,Rainy,17,4,Good
+Kathi,64,Madur 7,Red,Paschim Medinipur,A3,Sealdaha,246.2,Rainy,46,3.9,Moderate
+Mask,64,Chau Mask 3,White,Purulia,B3,Basirhat,198.7,Rainy,21,4.2,Good
+Teracotta,64,Teracotta 7,Brown,Nabadwip,B2,Kulti,228.1,Autumn,10,4.2,Good
+Leather Goods,64,Santiniketan Leather 10,Blue,Santiniketan,A2,Ultodanga,383.46,Winter,12,4.3,Excellent
+Saree,64,Baluchari Saree 1,Violet,Bishnupur,B1,Sonarpur,621.99,Summer,11,4.3,Excellent
+Saree,64,Baluchari Saree 4,Green,Bishnupur,B1,Purulia,441.12,Summer,11,3.9,Moderate
+Saree,64,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Sodepur,621.99,Winter,11,3.8,Moderate
+Saree,64,Santipur Tanter Saree 3,Blue,Santipur,A1,Duttapukur,675.99,Rainy,12,3.9,Moderate
+Kathi,65,Madur 7,Red,Paschim Medinipur,A3,Palasy,269.2,Summer,14,3.5,Moderate
+Mask,65,Chau Mask 3,Red,Purulia,B3,Shaymnagar,194.8,Spring,12,3.9,Moderate
+Mask,65,Chau Mask 3,Golden,Purulia,B3,Debagram,209.6,Spring,29,4.4,Excellent
+Teracotta,65,Teracotta 7,Brown,Nabadwip,B2,Kulti,244.5,Summer,35,3.5,Moderate
+Leather Goods,65,Santiniketan Leather 3,Orange,Santiniketan,A2,Dumdum,411.65,Rainy,5,4.2,Good
+Saree,65,Baluchari Saree 6,Brown,Bishnupur,B1,Naihati,495.09,Rainy,8,4.4,Excellent
+Saree,65,Santipur Tanter Saree 3,Blue,Santipur,A1,Duttapukur,681.99,Summer,22,4,Good
+Saree,65,Santipur Tanter Saree 7,Orange,Santipur,A1,Barasat,555.99,Spring,6,4.2,Good
+Saree,65,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Barasat,725.43,Winter,17,4.3,Excellent
+Saree,65,Santipur Tanter Saree 10,White,Santipur,A1,Nadia,847.43,Rainy,10,4.1,Good
+Kathi,66,Madur 8,Light Yellow,Paschim Medinipur,A3,Khardha,197.6,Summer,35,4.5,Excellent
+Teracotta,66,Teracotta 7,Brown,Nabadwip,B2,Hugly,286.5,Rainy,25,4.4,Excellent
+Teracotta,66,Teracotta 7,Brown,Nabadwip,B2,Asansol,284.6,Winter,39,3.7,Moderate
+Leather Goods,66,Santiniketan Leather 6,Brown,Santiniketan,A2,Ultodanga,391.65,Winter,18,4.3,Excellent
+Saree,66,Santipur Tanter Saree 2,Violet,Santipur,A1,Barasat,671.99,Rainy,6,4.2,Good
+Saree,66,Santipur Tanter Saree 2,Violet,Santipur,A1,Sodepur,721.99,Spring,9,4.2,Good
+Saree,66,Santipur Tanter Saree 6,Green,Santipur,A1,Duttapukur,749.99,Spring,9,4.2,Good
+Kathi,67,Madur 8,Light Yellow,Paschim Medinipur,A3,Sodepur,258.8,Winter,17,3.6,Moderate
+Mask,67,Chau Mask 3,Yellow,Purulia,B3,Santipur,194.3,Spring,35,3.5,Moderate
+Mask,67,Chau Mask 3,Green,Purulia,B3,Jagadal,189.5,Rainy,38,4.3,Excellent
+Mask,67,Chau Mask 3,Yellow,Purulia,B3,Sonarpur,183.6,Automn,28,3.7,Moderate
+Mask,67,Chau Mask 3,Golden,Purulia,B3,Basirhat,203.9,Summer,10,4.4,Excellent
+Mask,67,Chau Mask 3,White,Purulia,B3,Sonarpur,248.1,Winter,15,3.6,Moderate
+Teracotta,67,Teracotta 7,Brown,Nabadwip,B2,Hugly,265.5,Autumn,26,4,Good
+Saree,67,Baluchari Saree 4,Green,Bishnupur,B1,Basirhat,479.05,Winter,19,4.5,Excellent
+Saree,67,Baluchari Saree 4,Green,Bishnupur,B1,Raniganj,458.92,Winter,10,4.2,Good
+Saree,67,Baluchari Saree 4,Green,Bishnupur,B1,Naihati,477.89,Spring,15,3.7,Moderate
+Saree,67,Baluchari Saree 5,Yellow,Bishnupur,B1,Naihati,468.71,Spring,15,4.1,Good
+Saree,67,Baluchari Saree 7,Red,Bishnupur,B1,Purulia,425.58,Rainy,14,4,Good
+Saree,67,Baluchari Saree 7,Red,Bishnupur,B1,Sonarpur,474.3,Spring,11,4,Good
+Kathi,68,Madur 8,Red,Paschim Medinipur,A3,Barackpore,220.25,Rainy,22,4.3,Excellent
+Kathi,68,Madur 8,Red,Paschim Medinipur,A3,Belgharea,216.5,Summer,39,4.4,Excellent
+Mask,68,Chau Mask 3,Red,Purulia,B3,Shaymnagar,236.6,Automn,25,3.8,Moderate
+Leather Goods,68,Santiniketan Leather 4,Yellow,Santiniketan,A2,Ultodanga,519.42,Summer,14,4.4,Excellent
+Saree,68,Baluchari Saree 1,Violet,Bishnupur,B1,Purulia,621.99,Winter,5,3.9,Moderate
+Saree,68,Baluchari Saree 3,Light Blue,Bishnupur,B1,Raniganj,328.85,Rainy,12,3.7,Moderate
+Saree,68,Baluchari Saree 5,Yellow,Bishnupur,B1,Raniganj,456.87,Winter,17,4.1,Good
+Saree,68,Baluchari Saree 9,Purple,Bishnupur,B1,Basirhat,547.78,Spring,8,4.3,Excellent
+Saree,68,Santipur Tanter Saree 7,Orange,Santipur,A1,Sodepur,565.99,Spring,7,4.2,Good
+Saree,68,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Duttapukur,725.75,Rainy,17,3.9,Moderate
+Saree,68,Santipur Tanter Saree 10,White,Santipur,A1,Duttapukur,848.78,Rainy,16,4.2,Good
+Teracotta,69,Teracotta 7,Brown,Nabadwip,B2,Barasat,236.6,Rainy,13,4.5,Excellent
+Leather Goods,69,Santiniketan Leather 6,Brown,Santiniketan,A2,Dumdum,420.32,Summer,15,4.3,Excellent
+Saree,69,Baluchari Saree 2,Blue,Bishnupur,B1,Purulia,448.1,Summer,17,4,Good
+Saree,69,Baluchari Saree 6,Brown,Bishnupur,B1,Purulia,498.06,Winter,9,4.2,Good
+Saree,69,Santipur Tanter Saree 4,Black,Santipur,A1,Kolkata,459.99,Spring,22,3.9,Moderate
+Saree,69,Santipur Tanter Saree 7,Orange,Santipur,A1,Sodepur,495.99,Rainy,22,4.4,Excellent
+Saree,69,Santipur Tanter Saree 10,White,Santipur,A1,Barasat,871.09,Spring,12,4.2,Good
+Mask,70,Chau Mask 3,Yellow,Purulia,B3,Jagadal,185.2,Automn,17,3.7,Moderate
+Leather Goods,70,Santiniketan Leather 9,Brown,Santiniketan,A2,Dumdum,346.83,Spring,17,4.1,Good
+Saree,70,Baluchari Saree 6,Brown,Bishnupur,B1,Sonarpur,500.75,Winter,16,4.4,Excellent
+Saree,70,Santipur Tanter Saree 2,Violet,Santipur,A1,Kolkata,651.99,Rainy,10,4.1,Good
+Saree,70,Santipur Tanter Saree 4,Black,Santipur,A1,Kolkata,419.99,Rainy,12,3.9,Moderate
+Saree,70,Santipur Tanter Saree 7,Orange,Santipur,A1,Kolkata,509.99,Rainy,12,4.3,Excellent
+Saree,70,Santipur Tanter Saree 7,Orange,Santipur,A1,Duttapukur,535.99,Spring,9,3.7,Moderate
+Saree,70,Santipur Tanter Saree 8,Yellow,Santipur,A1,Duttapukur,809.66,Summer,22,4.3,Excellent
+Kathi,71,Madur 8,Light Yellow,Paschim Medinipur,A3,Bethuadahari,215.6,Rainy,16,4.5,Excellent
+Teracotta,71,Teracotta 7,Brown,Nabadwip,B2,Kulti,266.5,Autumn,26,4.5,Excellent
+Teracotta,71,Teracotta 7,Brown,Nabadwip,B2,Bandale,298.3,Rainy,42,4,Good
+Teracotta,71,Teracotta 7,Brown,Nabadwip,B2,Siliguri,274.6,Rainy,25,4.2,Good
+Leather Goods,71,Santiniketan Leather 7,Black,Santiniketan,A2,Bardhaman,461.2,Rainy,16,3.8,Moderate
+Saree,71,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Duttapukur,581.99,Spring,25,4,Good
+Saree,71,Santipur Tanter Saree 10,White,Santipur,A1,Sodepur,869.52,Spring,15,3.9,Moderate
+Kathi,72,Madur 8,Red,Paschim Medinipur,A3,Palasy,254.6,Summer,29,3.6,Moderate
+Teracotta,72,Teracotta 7,Brown,Nabadwip,B2,Kulti,245.6,Rainy,43,4,Good
+Saree,72,Baluchari Saree 3,Light Blue,Bishnupur,B1,Basirhat,386.53,Spring,19,3.7,Moderate
+Saree,72,Baluchari Saree 10,Orange,Bishnupur,B1,Purulia,497.72,Summer,17,4.1,Good
+Saree,72,Santipur Tanter Saree 4,Black,Santipur,A1,Kolkata,439.99,Summer,6,4,Good
+Saree,72,Santipur Tanter Saree 4,Black,Santipur,A1,Nadia,395.99,Rainy,12,4.4,Excellent
+Kathi,73,Madur 8,Red,Paschim Medinipur,A3,Bardhaman,169.5,Rainy,17,3.8,Moderate
+Kathi,73,Madur 8,Red,Paschim Medinipur,A3,Beharampore,205.6,Winter,25,3.6,Moderate
+Teracotta,73,Teracotta 7,Brown,Nabadwip,B2,Duttapukur,200.2,Spring,17,3.9,Moderate
+Teracotta,73,Teracotta 7,Brown,Nabadwip,B2,Duttapukur,289.3,Spring,26,3.5,Moderate
+Leather Goods,73,Santiniketan Leather 9,Brown,Santiniketan,A2,Dumdum,336.21,Summer,19,4.3,Excellent
+Saree,73,Baluchari Saree 5,Yellow,Bishnupur,B1,Sonarpur,465.2,Summer,15,4.1,Good
+Saree,73,Baluchari Saree 6,Brown,Bishnupur,B1,Raniganj,492.11,Summer,17,4.2,Good
+Saree,73,Santipur Tanter Saree 6,Green,Santipur,A1,Sodepur,727.99,Winter,17,4,Good
+Teracotta,74,Teracotta 8,Brown,Nabadwip,B2,Hugly,268.2,Rainy,25,4.5,Excellent
+Teracotta,74,Teracotta 8,Brown,Nabadwip,B2,Hugly,256.6,Summer,22,4,Good
+Leather Goods,74,Santiniketan Leather 4,Yellow,Santiniketan,A2,Bardhaman,481.15,Rainy,13,4.3,Excellent
+Leather Goods,74,Santiniketan Leather 5,Rainbow,Santiniketan,A2,Bardhaman,363.42,Winter,7,3.9,Moderate
+Saree,74,Baluchari Saree 10,Orange,Bishnupur,B1,Sonarpur,492.92,Rainy,10,4.4,Excellent
+Saree,74,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Duttapukur,735.75,Spring,9,3.9,Moderate
+Mask,75,Chau Mask 3,Red,Purulia,B3,Shaymnagar,198.7,Summer,21,4,Good
+Mask,75,Chau Mask 3,Red,Purulia,B3,Jagadal,245.5,Automn,25,4.2,Good
+Mask,75,Chau Mask 3,Golden,Purulia,B3,Sonarpur,244.6,Winter,35,4.2,Good
+Teracotta,75,Teracotta 8,Brown,Nabadwip,B2,Bandale,228.1,Summer,31,4,Good
+Teracotta,75,Teracotta 8,Brown,Nabadwip,B2,Hugly,215.3,Rainy,25,4,Good
+Saree,75,Baluchari Saree 2,Blue,Bishnupur,B1,Purulia,474.55,Spring,15,4.3,Excellent
+Kathi,76,Madur 8,Light Brown,Paschim Medinipur,A3,Krishnagar,246.5,Summer,33,3.7,Moderate
+Kathi,76,Madur 8,Light Yellow,Paschim Medinipur,A3,Bardhaman,165.3,Winter,21,3.9,Moderate
+Kathi,76,Madur 8,Red,Paschim Medinipur,A3,Bethuadahari,225.2,Summer,38,3.6,Moderate
+Mask,76,Chau Mask 3,Green,Purulia,B3,Jagadal,207.6,Winter,40,4.4,Excellent
+Leather Goods,76,Santiniketan Leather 8,Yellow,Santiniketan,A2,Ultodanga,282.34,Winter,10,3.7,Moderate
+Saree,76,Santipur Tanter Saree 5,Brown,Santipur,A1,Nadia,671.99,Rainy,8,3.8,Moderate
+Saree,76,Santipur Tanter Saree 6,Green,Santipur,A1,Nadia,671.99,Summer,9,4,Good
+Teracotta,77,Teracotta 8,Brown,Nabadwip,B2,Bandale,242.5,Winter,41,4.2,Good
+Teracotta,77,Teracotta 8,Brown,Nabadwip,B2,Hugly,246.6,Spring,31,3.6,Moderate
+Leather Goods,77,Santiniketan Leather 10,Blue,Santiniketan,A2,Dumdum,399.77,Rainy,11,3.9,Moderate
+Saree,77,Baluchari Saree 10,Orange,Bishnupur,B1,Basirhat,480.23,Rainy,19,3.9,Moderate
+Saree,77,Santipur Tanter Saree 6,Green,Santipur,A1,Barasat,748.99,Spring,6,4.5,Excellent
+Saree,77,Santipur Tanter Saree 8,Yellow,Santipur,A1,Kolkata,834.04,Spring,13,4.5,Excellent
+Mask,78,Chau Mask 3,Golden,Purulia,B3,Jagadal,247.6,Rainy,33,4.1,Good
+Teracotta,78,Teracotta 8,Brown,Nabadwip,B2,Asansol,294.5,Rainy,30,4.3,Excellent
+Teracotta,78,Teracotta 8,Brown,Nabadwip,B2,Barasat,239.6,Winter,32,3.7,Moderate
+Saree,78,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Kolkata,720.91,Winter,22,3.8,Moderate
+Saree,78,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Barasat,715.43,Summer,12,3.7,Moderate
+Saree,78,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Sodepur,716.35,Spring,7,4,Good
+Kathi,79,Madur 8,Red,Paschim Medinipur,A3,Bethuadahari,194.6,Winter,44,3.9,Moderate
+Kathi,79,Madur 8,Light Brown,Paschim Medinipur,A3,Naihati,221.5,Spring,21,4.5,Excellent
+Teracotta,79,Teracotta 8,Brown,Nabadwip,B2,Durgapur,278.8,Rainy,34,4.5,Excellent
+Saree,79,Baluchari Saree 2,Blue,Bishnupur,B1,Basirhat,461.68,Summer,15,4.1,Good
+Saree,79,Baluchari Saree 5,Yellow,Bishnupur,B1,Basirhat,485.02,Summer,12,4.5,Excellent
+Saree,79,Baluchari Saree 9,Purple,Bishnupur,B1,Raniganj,572.88,Summer,13,4.4,Excellent
+Saree,79,Santipur Tanter Saree 3,Blue,Santipur,A1,Duttapukur,721.99,Winter,13,3.8,Moderate
+Saree,79,Santipur Tanter Saree 6,Green,Santipur,A1,Kolkata,691.99,Rainy,12,4.4,Excellent
+Saree,79,Santipur Tanter Saree 8,Yellow,Santipur,A1,Nadia,816.83,Spring,12,4.1,Good
+Kathi,80,Madur 8,Red,Paschim Medinipur,A3,Nabadwip,196.2,Winter,26,4,Good
+Kathi,80,Madur 8,Light Yellow,Paschim Medinipur,A3,Beharampore,182.6,Summer,25,4.5,Excellent
+Kathi,80,Madur 8,Light Yellow,Paschim Medinipur,A3,Sodepur,288.6,Spring,12,4.5,Excellent
+Mask,80,Chau Mask 4,Yellow,Purulia,B3,Basirhat,189.4,Summer,43,3.8,Moderate
+Teracotta,80,Teracotta 8,Brown,Nabadwip,B2,Barasat,288.9,Rainy,16,4.2,Good
+Leather Goods,80,Santiniketan Leather 6,Brown,Santiniketan,A2,Ultodanga,400.56,Summer,11,3.9,Moderate
+Leather Goods,80,Santiniketan Leather 9,Brown,Santiniketan,A2,Dumdum,297.94,Rainy,20,4.4,Excellent
+Saree,80,Baluchari Saree 9,Purple,Bishnupur,B1,Raniganj,587.47,Spring,13,4.3,Excellent
+Saree,80,Santipur Tanter Saree 4,Black,Santipur,A1,Sodepur,449.99,Spring,17,4.5,Excellent
+Kathi,81,Madur 8,Red,Paschim Medinipur,A3,Bardhaman,245.2,Spring,15,4.2,Good
+Kathi,81,Madur 8,Light Yellow,Paschim Medinipur,A3,Khardha,286.2,Summer,22,4.4,Excellent
+Mask,81,Chau Mask 4,Red,Purulia,B3,Jagadal,199.1,Winter,17,4,Good
+Mask,81,Chau Mask 4,Red,Purulia,B3,Debagram,201.5,Summer,15,4.2,Good
+Mask,81,Chau Mask 4,White,Purulia,B3,Jagadal,218.6,Spring,35,4.5,Excellent
+Leather Goods,81,Santiniketan Leather 2,Blue,Santiniketan,A2,Dumdum,437.27,Winter,12,4.1,Good
+Leather Goods,81,Santiniketan Leather 6,Brown,Santiniketan,A2,Dumdum,407.84,Winter,8,4.1,Good
+Saree,81,Baluchari Saree 6,Brown,Bishnupur,B1,Basirhat,516.34,Summer,20,3.8,Moderate
+Saree,81,Santipur Tanter Saree 8,Yellow,Santipur,A1,Duttapukur,819.66,Winter,8,4.2,Good
+Mask,82,Chau Mask 4,Red,Purulia,B3,Shaymnagar,188.6,Rainy,24,4.5,Excellent
+Teracotta,82,Teracotta 8,Brown,Nabadwip,B2,Bandale,245.6,Summer,20,3.9,Moderate
+Teracotta,82,Teracotta 8,Brown,Nabadwip,B2,Kulti,265.3,Summer,34,3.6,Moderate
+Teracotta,82,Teracotta 8,Brown,Nabadwip,B2,Bandale,245.5,Summer,36,3.5,Moderate
+Leather Goods,82,Santiniketan Leather 3,Orange,Santiniketan,A2,Ultodanga,461.69,Winter,8,4.5,Excellent
+Saree,82,Baluchari Saree 2,Blue,Bishnupur,B1,Raniganj,421.55,Rainy,15,4.5,Excellent
+Saree,82,Baluchari Saree 7,Red,Bishnupur,B1,Basirhat,456.42,Rainy,13,4.3,Excellent
+Saree,82,Baluchari Saree 7,Red,Bishnupur,B1,Sonarpur,437.74,Rainy,10,4,Good
+Saree,82,Baluchari Saree 8,Dark Green,Bishnupur,B1,Raniganj,489.47,Summer,11,3.7,Moderate
+Saree,82,Baluchari Saree 9,Purple,Bishnupur,B1,Raniganj,551.43,Rainy,12,4.2,Good
+Saree,82,Santipur Tanter Saree 3,Blue,Santipur,A1,Kolkata,721.99,Spring,17,4.1,Good
+Kathi,83,Madur 1,Red,Paschim Medinipur,A3,Khardha,211.6,Summer,36,4.5,Excellent
+Saree,83,Baluchari Saree 4,Green,Bishnupur,B1,Basirhat,466.32,Spring,14,4.4,Excellent
+Saree,83,Baluchari Saree 8,Dark Green,Bishnupur,B1,Raniganj,447.89,Winter,19,4,Good
+Saree,83,Baluchari Saree 8,Dark Green,Bishnupur,B1,Purulia,497.48,Spring,18,4.3,Excellent
+Saree,83,Baluchari Saree 10,Orange,Bishnupur,B1,Raniganj,509.37,Spring,13,4,Good
+Saree,83,Santipur Tanter Saree 8,Yellow,Santipur,A1,Duttapukur,829.66,Spring,9,4.1,Good
+Saree,83,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Sodepur,686.35,Rainy,22,4.3,Excellent
+Saree,83,Santipur Tanter Saree 10,White,Santipur,A1,Nadia,868.33,Spring,12,4,Good
+Kathi,84,Madur 1,Light Brown,Paschim Medinipur,A3,Dumdum,257.6,Rainy,14,4.4,Excellent
+Leather Goods,84,Santiniketan Leather 1,Orange,Santiniketan,A2,Dumdum,329.66,Summer,22,3.7,Moderate
+Leather Goods,84,Santiniketan Leather 1,Orange,Santiniketan,A2,Ultodanga,336.73,Summer,11,3.9,Moderate
+Saree,84,Baluchari Saree 3,Light Blue,Bishnupur,B1,Raniganj,371.84,Winter,8,4.1,Good
+Saree,84,Baluchari Saree 6,Brown,Bishnupur,B1,Raniganj,481.59,Rainy,11,4.2,Good
+Saree,84,Santipur Tanter Saree 2,Violet,Santipur,A1,Barasat,701.99,Spring,12,4.4,Excellent
+Saree,84,Santipur Tanter Saree 5,Brown,Santipur,A1,Kolkata,661.99,Rainy,12,3.9,Moderate
+Saree,84,Santipur Tanter Saree 6,Green,Santipur,A1,Kolkata,734.99,Winter,12,3.8,Moderate
+Saree,84,Santipur Tanter Saree 6,Green,Santipur,A1,Sodepur,671.99,Rainy,22,4.1,Good
+Saree,84,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Sodepur,706.35,Winter,17,3.9,Moderate
+Kathi,85,Madur 1,Red,Paschim Medinipur,A3,Krishnagar,234.8,Spring,19,3.5,Moderate
+Mask,85,Chau Mask 4,Yellow,Purulia,B3,Sonarpur,200.6,Rainy,26,4.2,Good
+Teracotta,85,Teracotta 8,Brown,Nabadwip,B2,Durgapur,281.8,Rainy,26,4.1,Good
+Teracotta,85,Teracotta 8,Brown,Nabadwip,B2,Kulti,252.2,Summer,41,4,Good
+Teracotta,85,Teracotta 8,Brown,Nabadwip,B2,Durgapur,260.1,Summer,25,3.9,Moderate
+Leather Goods,85,Santiniketan Leather 7,Black,Santiniketan,A2,Ultodanga,459.41,Spring,19,4.1,Good
+Saree,85,Baluchari Saree 3,Light Blue,Bishnupur,B1,Sonarpur,343.04,Winter,9,4.4,Excellent
+Saree,85,Baluchari Saree 7,Red,Bishnupur,B1,Naihati,432.09,Rainy,10,3.8,Moderate
+Saree,85,Baluchari Saree 9,Purple,Bishnupur,B1,Sonarpur,520.93,Rainy,19,4,Good
+Saree,85,Santipur Tanter Saree 2,Violet,Santipur,A1,Barasat,701.99,Summer,15,3.8,Moderate
+Saree,85,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Nadia,695.01,Rainy,8,4.5,Excellent
+Mask,86,Chau Mask 4,Yellow,Purulia,B3,Sonarpur,196.5,Winter,28,3.7,Moderate
+Mask,86,Chau Mask 4,Red,Purulia,B3,Muragacha,199.5,Winter,18,4.3,Excellent
+Saree,86,Baluchari Saree 1,Violet,Bishnupur,B1,Naihati,631.99,Winter,6,4.2,Good
+Saree,86,Baluchari Saree 5,Yellow,Bishnupur,B1,Basirhat,459.5,Winter,9,4.2,Good
+Saree,86,Baluchari Saree 5,Yellow,Bishnupur,B1,Raniganj,457.25,Rainy,15,4.2,Good
+Saree,86,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Sodepur,611.99,Summer,22,4.5,Excellent
+Saree,86,Santipur Tanter Saree 4,Black,Santipur,A1,Sodepur,449.99,Winter,8,4.3,Excellent
+Kathi,87,Madur 1,Light Yellow,Paschim Medinipur,A3,Sealdaha,266.4,Spring,11,3.7,Moderate
+Teracotta,87,Teracotta 8,Brown,Nabadwip,B2,Kulti,266.3,Autumn,21,3.5,Moderate
+Leather Goods,87,Santiniketan Leather 1,Orange,Santiniketan,A2,Dumdum,339.66,Spring,15,3.6,Moderate
+Leather Goods,87,Santiniketan Leather 3,Orange,Santiniketan,A2,Dumdum,427.65,Summer,15,3.9,Moderate
+Leather Goods,87,Santiniketan Leather 5,Rainbow,Santiniketan,A2,Bardhaman,343.37,Rainy,7,4.4,Excellent
+Saree,87,Baluchari Saree 1,Violet,Bishnupur,B1,Sonarpur,621.99,Winter,11,4.4,Excellent
+Saree,87,Baluchari Saree 3,Light Blue,Bishnupur,B1,Naihati,333.52,Winter,19,4.5,Excellent
+Saree,87,Baluchari Saree 5,Yellow,Bishnupur,B1,Sonarpur,456.01,Winter,20,4.1,Good
+Saree,87,Baluchari Saree 7,Red,Bishnupur,B1,Basirhat,448.23,Winter,19,4.4,Excellent
+Kathi,88,Madur 1,Red,Paschim Medinipur,A3,Nabadwip,218.4,Summer,13,4.4,Excellent
+Mask,88,Chau Mask 4,Red,Purulia,B3,Sonarpur,215.6,Rainy,19,4.5,Excellent
+Mask,88,Chau Mask 4,Yellow,Purulia,B3,Debagram,187.6,Summer,41,3.8,Moderate
+Teracotta,88,Teracotta 8,Brown,Nabadwip,B2,Bandale,265.2,Rainy,21,4.5,Excellent
+Leather Goods,88,Santiniketan Leather 1,Orange,Santiniketan,A2,Bardhaman,310.25,Rainy,7,4.3,Excellent
+Leather Goods,88,Santiniketan Leather 7,Black,Santiniketan,A2,Bardhaman,477.71,Winter,20,3.8,Moderate
+Leather Goods,88,Santiniketan Leather 9,Brown,Santiniketan,A2,Dumdum,326.1,Winter,14,3.9,Moderate
+Leather Goods,88,Santiniketan Leather 10,Blue,Santiniketan,A2,Bardhaman,417.11,Summer,14,4.4,Excellent
+Saree,88,Baluchari Saree 1,Violet,Bishnupur,B1,Sonarpur,621.99,Spring,11,4.2,Good
+Saree,88,Baluchari Saree 2,Blue,Bishnupur,B1,Naihati,463.89,Winter,18,4.1,Good
+Saree,88,Santipur Tanter Saree 5,Brown,Santipur,A1,Nadia,721.99,Summer,9,4.2,Good
+Saree,88,Santipur Tanter Saree 7,Orange,Santipur,A1,Kolkata,572.99,Spring,13,3.7,Moderate
+Mask,89,Chau Mask 4,Red,Purulia,B3,Muragacha,195.6,Winter,16,3.9,Moderate
+Mask,89,Chau Mask 4,Green,Purulia,B3,Muragacha,208.3,Spring,28,4.4,Excellent
+Teracotta,89,Teracotta 8,Brown,Nabadwip,B2,Asansol,289.6,Spring,12,4,Good
+Leather Goods,89,Santiniketan Leather 10,Blue,Santiniketan,A2,Ultodanga,435.88,Spring,15,4.2,Good
+Saree,89,Baluchari Saree 4,Green,Bishnupur,B1,Purulia,444.67,Winter,16,4.2,Good
+Saree,89,Baluchari Saree 4,Green,Bishnupur,B1,Purulia,455.51,Spring,10,3.9,Moderate
+Saree,89,Baluchari Saree 6,Brown,Bishnupur,B1,Purulia,537.97,Spring,18,4.3,Excellent
+Saree,89,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Duttapukur,601.99,Summer,12,4,Good
+Teracotta,90,Teracotta 8,Brown,Nabadwip,B2,Purulia,254.8,Winter,13,4,Good
+Teracotta,90,Teracotta 8,Brown,Nabadwip,B2,Durgapur,286.9,Rainy,15,4.4,Excellent
+Leather Goods,90,Santiniketan Leather 6,Brown,Santiniketan,A2,Bardhaman,395.85,Rainy,13,4.5,Excellent
+Saree,90,Baluchari Saree 6,Brown,Bishnupur,B1,Sonarpur,499.03,Summer,10,4.4,Excellent
+Saree,90,Baluchari Saree 9,Purple,Bishnupur,B1,Purulia,548.64,Summer,8,4.1,Good
+Saree,90,Baluchari Saree 10,Orange,Bishnupur,B1,Naihati,507.2,Winter,9,4.3,Excellent
+Saree,90,Santipur Tanter Saree 2,Violet,Santipur,A1,Sodepur,721.99,Winter,17,4.3,Excellent
+Mask,91,Chau Mask 4,Yellow,Purulia,B3,Santipur,233.6,Winter,36,4.2,Good
+Saree,91,Baluchari Saree 6,Brown,Bishnupur,B1,Raniganj,495.92,Winter,19,4.3,Excellent
+Saree,91,Baluchari Saree 9,Purple,Bishnupur,B1,Purulia,528.35,Rainy,13,3.8,Moderate
+Saree,91,Santipur Tanter Saree 8,Yellow,Santipur,A1,Kolkata,804.04,Rainy,12,4.4,Excellent
+Saree,91,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Kolkata,730.91,Spring,13,4.1,Good
+Kathi,92,Madur 2,Light Yellow,Paschim Medinipur,A3,Ultodanga,185.57,Winter,18,4.5,Excellent
+Kathi,92,Madur 2,Light Yellow,Paschim Medinipur,A3,Bethuadahari,200.5,Summer,24,3.8,Moderate
+Kathi,92,Madur 2,Red,Paschim Medinipur,A3,Sealdaha,208.2,Summer,23,3.9,Moderate
+Kathi,92,Madur 2,Red,Paschim Medinipur,A3,Sodepur,297.4,Winter,32,4.2,Good
+Mask,92,Chau Mask 4,Red,Purulia,B3,Sonarpur,245.6,Rainy,40,4.1,Good
+Leather Goods,92,Santiniketan Leather 2,Blue,Santiniketan,A2,Bardhaman,432.41,Spring,16,3.7,Moderate
+Leather Goods,92,Santiniketan Leather 8,Yellow,Santiniketan,A2,Bardhaman,312.44,Summer,18,4,Good
+Leather Goods,92,Santiniketan Leather 9,Brown,Santiniketan,A2,Bardhaman,364.42,Spring,10,3.9,Moderate
+Saree,92,Baluchari Saree 7,Red,Bishnupur,B1,Raniganj,477.97,Spring,10,3.9,Moderate
+Saree,92,Santipur Tanter Saree 7,Orange,Santipur,A1,Nadia,547.99,Summer,9,3.8,Moderate
+Teracotta,93,Teracotta 8,Brown,Nabadwip,B2,Durgapur,280.3,Spring,45,4,Good
+Teracotta,93,Teracotta 8,Brown,Nabadwip,B2,Asansol,244.4,Winter,23,3.8,Moderate
+Leather Goods,93,Santiniketan Leather 2,Blue,Santiniketan,A2,Bardhaman,446.41,Winter,8,3.6,Moderate
+Leather Goods,93,Santiniketan Leather 3,Orange,Santiniketan,A2,Bardhaman,425.67,Rainy,7,4.1,Good
+Leather Goods,93,Santiniketan Leather 4,Yellow,Santiniketan,A2,Bardhaman,539.93,Spring,20,4.4,Excellent
+Leather Goods,93,Santiniketan Leather 8,Yellow,Santiniketan,A2,Ultodanga,318.98,Spring,14,4.4,Excellent
+Saree,93,Baluchari Saree 1,Violet,Bishnupur,B1,Naihati,631.99,Rainy,6,4.3,Excellent
+Saree,93,Baluchari Saree 9,Purple,Bishnupur,B1,Sonarpur,568.96,Summer,14,4.2,Good
+Saree,93,Santipur Tanter Saree 2,Violet,Santipur,A1,Duttapukur,691.99,Rainy,9,4,Good
+Saree,93,Santipur Tanter Saree 5,Brown,Santipur,A1,Sodepur,731.99,Spring,7,4.3,Excellent
+Saree,93,Santipur Tanter Saree 6,Green,Santipur,A1,Duttapukur,688.99,Summer,22,4.1,Good
+Saree,93,Santipur Tanter Saree 8,Yellow,Santipur,A1,Nadia,796.83,Summer,9,3.9,Moderate
+Mask,94,Chau Mask 6,Red,Purulia,B3,Muragacha,160.5,Winter,23,4.2,Good
+Teracotta,94,Teracotta 8,Brown,Nabadwip,B2,Barasat,287.6,Spring,38,4.2,Good
+Teracotta,94,Teracotta 8,Brown,Nabadwip,B2,Asansol,244.9,Autumn,22,3.5,Moderate
+Leather Goods,94,Santiniketan Leather 2,Blue,Santiniketan,A2,Ultodanga,427.88,Summer,11,3.9,Moderate
+Leather Goods,94,Santiniketan Leather 4,Yellow,Santiniketan,A2,Ultodanga,547.86,Spring,8,3.8,Moderate
+Saree,94,Baluchari Saree 7,Red,Bishnupur,B1,Raniganj,474.49,Summer,18,3.7,Moderate
+Saree,94,Baluchari Saree 8,Dark Green,Bishnupur,B1,Sonarpur,448.84,Rainy,12,3.8,Moderate
+Saree,94,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Nadia,601.99,Winter,9,4.2,Good
+Saree,94,Santipur Tanter Saree 8,Yellow,Santipur,A1,Nadia,806.83,Rainy,8,4,Good
+Teracotta,95,Teracotta 8,Brown,Nabadwip,B2,Barasat,225.5,Autumn,23,4.5,Excellent
+Teracotta,95,Teracotta 8,Brown,Nabadwip,B2,Asansol,200.2,Winter,27,4,Good
+Teracotta,95,Teracotta 8,Brown,Nabadwip,B2,Bandale,287.6,Autumn,13,4.2,Good
+Teracotta,95,Teracotta 8,Brown,Nabadwip,B2,Hugly,266.2,Winter,33,3.9,Moderate
+Teracotta,95,Teracotta 8,Brown,Nabadwip,B2,Barasat,258.8,Summer,21,4,Good
+Saree,95,Baluchari Saree 1,Violet,Bishnupur,B1,Purulia,621.99,Summer,5,4.2,Good
+Saree,95,Baluchari Saree 3,Light Blue,Bishnupur,B1,Purulia,320.99,Rainy,11,3.7,Moderate
+Saree,95,Baluchari Saree 3,Light Blue,Bishnupur,B1,Sonarpur,389.28,Spring,17,4.4,Excellent
+Saree,95,Baluchari Saree 5,Yellow,Bishnupur,B1,Naihati,469.02,Rainy,17,4,Good
+Saree,95,Baluchari Saree 8,Dark Green,Bishnupur,B1,Basirhat,442.01,Rainy,16,4.5,Excellent
+Saree,95,Santipur Tanter Saree 2,Violet,Santipur,A1,Nadia,671.99,Rainy,12,4.4,Excellent
+Saree,95,Santipur Tanter Saree 2,Violet,Santipur,A1,Kolkata,751.99,Spring,6,3.7,Moderate
+Saree,95,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Duttapukur,761.75,Winter,8,4.1,Good
+Saree,95,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Nadia,691.01,Summer,9,3.8,Moderate
+Saree,95,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Barasat,720.43,Spring,6,4.4,Excellent
+Saree,95,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Nadia,715.01,Spring,12,4.4,Excellent
+Kathi,96,Madur 2,Red,Paschim Medinipur,A3,Krishnagar,244.6,Rainy,42,3.5,Moderate
+Mask,96,Chau Mask 6,Golden,Purulia,B3,Santipur,224.8,Rainy,29,3.5,Moderate
+Mask,96,Chau Mask 6,White,Purulia,B3,Jagadal,236.2,Automn,15,3.7,Moderate
+Teracotta,96,Teracotta 8,Brown,Nabadwip,B2,Bandale,281.6,Rainy,10,4.5,Excellent
+Leather Goods,96,Santiniketan Leather 1,Orange,Santiniketan,A2,Ultodanga,346.73,Spring,19,4.4,Excellent
+Leather Goods,96,Santiniketan Leather 5,Rainbow,Santiniketan,A2,Dumdum,361.66,Summer,15,3.9,Moderate
+Leather Goods,96,Santiniketan Leather 9,Brown,Santiniketan,A2,Ultodanga,329.62,Rainy,18,4.4,Excellent
+Saree,96,Baluchari Saree 1,Violet,Bishnupur,B1,Purulia,621.99,Rainy,5,4.4,Excellent
+Saree,96,Baluchari Saree 3,Light Blue,Bishnupur,B1,Naihati,368.13,Spring,9,3.8,Moderate
+Saree,96,Baluchari Saree 9,Purple,Bishnupur,B1,Naihati,534.75,Winter,18,4.4,Excellent
+Saree,96,Baluchari Saree 9,Purple,Bishnupur,B1,Basirhat,545.77,Rainy,16,4.1,Good
+Saree,96,Santipur Tanter Saree 10,White,Santipur,A1,Duttapukur,859.15,Summer,14,4.1,Good
+Kathi,97,Madur 3,Light Brown,Paschim Medinipur,A3,Beharampore,300.8,Automn,26,4.4,Excellent
+Kathi,97,Madur 3,Light Yellow,Paschim Medinipur,A3,Ultodanga,17806,Winter,22,3.7,Moderate
+Kathi,97,Madur 3,Red,Paschim Medinipur,A3,Beharampore,256.4,Summer,32,4.5,Excellent
+Mask,97,Chau Mask 6,Green,Purulia,B3,Debagram,172.4,Summer,16,4.5,Excellent
+Mask,97,Chau Mask 6,Golden,Purulia,B3,Shaymnagar,205.6,Winter,30,4.4,Excellent
+Teracotta,97,Teracotta 8,Brown,Nabadwip,B2,Durgapur,240.9,Rainy,28,4.3,Excellent
+Teracotta,97,Teracotta 8,Brown,Nabadwip,B2,Hugly,280.3,Spring,36,4,Good
+Teracotta,97,Teracotta 8,Brown,Nabadwip,B2,Hugly,242.5,Rainy,18,4.2,Good
+Teracotta,97,Teracotta 8,Brown,Nabadwip,B2,Siliguri,245.3,Rainy,24,4,Good
+Teracotta,97,Teracotta 8,Brown,Nabadwip,B2,Kulti,228.8,Winter,42,3.6,Moderate
+Teracotta,97,Teracotta 8,Brown,Nabadwip,B2,Barasat,248.8,Summer,25,4,Good
+Saree,97,Santipur Tanter Saree 6,Green,Santipur,A1,Duttapukur,731.99,Winter,17,3.8,Moderate
+Saree,97,Santipur Tanter Saree 8,Yellow,Santipur,A1,Barasat,800.72,Summer,12,3.7,Moderate
+Saree,97,Santipur Tanter Saree 10,White,Santipur,A1,Sodepur,861.41,Rainy,18,3.8,Moderate
+Kathi,98,Madur 3,Light Brown,Paschim Medinipur,A3,Ultodanga,285.2,Winter,36,3.8,Moderate
+Kathi,98,Madur 3,Red,Paschim Medinipur,A3,Bardhaman,219.6,Rainy,25,3.8,Moderate
+Mask,98,Chau Mask 6,Yellow,Purulia,B3,Debagram,238.5,Winter,27,3.8,Moderate
+Mask,98,Chau Mask 6,White,Purulia,B3,Shaymnagar,216.7,Spring,23,4.4,Excellent
+Teracotta,98,Teracotta 8,Brown,Nabadwip,B2,Duttapukur,245.5,Winter,28,4,Good
+Leather Goods,98,Santiniketan Leather 4,Yellow,Santiniketan,A2,Dumdum,503.7,Rainy,13,4.3,Excellent
+Leather Goods,98,Santiniketan Leather 8,Yellow,Santiniketan,A2,Bardhaman,318.88,Spring,16,4.2,Good
+Saree,98,Baluchari Saree 7,Red,Bishnupur,B1,Raniganj,421.63,Rainy,10,4.2,Good
+Saree,98,Santipur Tanter Saree 6,Green,Santipur,A1,Nadia,671.99,Rainy,8,4,Good
+Saree,98,Santipur Tanter Saree 9,Light Blue,Santipur,A1,Nadia,671.01,Winter,24,4,Good
+Saree,98,Santipur Tanter Saree 10,White,Santipur,A1,Barasat,864.2,Winter,19,3.9,Moderate
+Kathi,99,Madur 3,Light Yellow,Paschim Medinipur,A3,Barackpore,188.2,Winter,25,3.9,Moderate
+Leather Goods,99,Santiniketan Leather 5,Rainbow,Santiniketan,A2,Dumdum,348.47,Spring,15,3.9,Moderate
+Leather Goods,99,Santiniketan Leather 7,Black,Santiniketan,A2,Ultodanga,469.62,Summer,8,3.8,Moderate
+Leather Goods,99,Santiniketan Leather 8,Yellow,Santiniketan,A2,Ultodanga,305.63,Rainy,13,4.3,Excellent
+Saree,99,Baluchari Saree 9,Purple,Bishnupur,B1,Naihati,573.82,Summer,15,4.2,Good
+Kathi,100,Madur 4,Light Brown,Paschim Medinipur,A3,Palasy,278.5,Summer,23,3.5,Moderate
+Mask,100,Chau Mask 6,Yellow,Purulia,B3,Shaymnagar,199.3,Winter,39,3.7,Moderate
+Leather Goods,100,Santiniketan Leather 2,Blue,Santiniketan,A2,Dumdum,425.27,Spring,15,3.8,Moderate
+Saree,100,Baluchari Saree 1,Violet,Bishnupur,B1,Basirhat,651.99,Rainy,12,4.2,Good
+Saree,100,Baluchari Saree 2,Blue,Bishnupur,B1,Sonarpur,439.36,Rainy,13,4.1,Good
+Saree,100,Santipur Tanter Saree 1,Light Brown,Santipur,A1,Duttapukur,581.99,Rainy,9,4.2,Good
+Saree,100,Santipur Tanter Saree 5,Brown,Santipur,A1,Duttapukur,721.99,Spring,9,4.1,Good
+Saree,100,Santipur Tanter Saree 6,Green,Santipur,A1,Barasat,683.99,Summer,12,4,Good

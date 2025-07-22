@@ -1,0 +1,603 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft of Bengal</title>
+    {% load static %}
+    <link rel="shortcut icon" href="/static/img/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark py-0 shadow-lg" id="gradient-navbar">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand me-5" href="#">
+        <img src="{% static 'img/logo.png' %}" alt="Logo" width="300" height="100">
+      </a>
+  
+      <!-- Toggler for Mobile View -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar Content -->
+      <div class="d-flex justify-content-between collapse navbar-collapse " id="navbarTogglerDemo03">
+        <!-- Navigation Links -->
+        <ul class="d-flex gap-2 navbar-nav mx-5 text-center">
+          <li class="nav-item ms-4">
+            <a class="nav-link text-light fw-semibold fs-5" href="{% url 'index:index' %}">Home</a>
+          </li>
+          <li class="nav-item ms-4 dropdown">
+            <a class="nav-link fs-5 dropdown-toggle text-light fw-semibold" href="#" id="categoriesDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+              <ul class="dropdown-menu dropdown-menu-light text-start" aria-labelledby="categoriesDropright">
+                <li class="dropdown">
+                  <a class="dropdown-item dropdown-toggle" href="#">Alipurduar</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'products:products' 'kalonunia' %}">Kalonunia Rice</a></li>
+                  </ul>
+                </li>
+        
+                <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Bankura</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'teracotta' %}">Bankura Terracotta Horse</a></li>
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'dokra' %}">Dokra ArtWorks</a></li>
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'baluchari' %}">Baluchuri Saree</a></li>
+                    </ul>
+                  </li>
+        
+                <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Bardhaman</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'gobindobhog' %}">Gobindobhog Rice</a></li>
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'mihidana' %}">Mihidana</a></li>
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'sitabhog' %}">Sitabhog</a></li>
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'dokra' %}">Dokra ArtWorks</a></li>
+                    </ul>
+                  </li>
+        
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Birbhum</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'santiniketan' %}">Shantiniketan Leather Goods</a></li>
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'garad' %}">Garad Saree</a></li>
+                    </ul>
+                  </li>
+        
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Coochbehar</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'kalonunia' %}">Kalonunia Rice</a></li>
+                    </ul>
+                  </li>
+                   
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Dakshin Dinajpur</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'kushmandi' %}">Kushmandi Wooden Mask</a></li>
+                    </ul>
+                  </li>
+        
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Hoogly</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'gobindobhog' %}">Gobindobhog Rice</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Jalpaiguri</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'kalonunia' %}">Kalonunia Rice</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Kolkata</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'rasgulla' %}">Kolkata Rasagulla</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Malda</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'fazli' %}">Fazli Mango</a></li>           
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'himsagar' %}">Himsagar Mango</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Midnapore</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'patachitra' %}">Patachitra ArtWorks</a></li>
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'madur' %}">Madur Kathi</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Murshidabad</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'garad' %}">Garad Saree</a></li>
+                    </ul>
+                  </li>
+        
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Nadia</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'kantha' %}">Nakshi Kantha Saree</a></li>
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'santipur' %}">Santipur Saree</a></li>
+                    </ul>
+                  </li>
+        
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Purulia</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'kathi' %}">Madur Kathi</a></li>
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'chhou' %}">Purulia Chhau Mask</a></li>
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'dokra' %}">Dokra ArtWorks</a></li>              
+                    </ul>
+                  </li>
+        
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">South 24 Parganas</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'moya' %}">Jayanagar Moya</a></li>
+                      <li><a class="dropdown-item" href="{% url 'products:products' 'honey' %}">Sundarban Honey</a></li>
+                    </ul>
+                  </li> 
+                
+              </ul>
+              
+          </li>
+          <li class="nav-item ms-4">
+            <a class="nav-link fs-5 text-light fw-semibold" href="#" data-bs-toggle="modal" data-bs-target="#craftLensModal">CraftLens</a>
+          </li>
+          <li class="nav-item ms-4">
+            <a class="nav-link fs-5 text-light fw-semibold" id="blogs" href="http://localhost:5173/">Blog</a>
+          </li>
+          <li class="nav-item ms-4">
+            <a class="nav-link fs-5 text-light fw-semibold" onclick="contact()" id="contacts" href="#contact">Contact</a>
+          </li>
+        </ul>
+  
+        <!-- Tools Section -->
+        <div class="d-flex gap-4 align-items-center">
+          <!-- Search Bar -->
+          <form class="d-flex align-items-center position-relative" method="GET" action="{% url 'products:search' %}" onsubmit="return validateSearch()">
+            <span class="position-absolute start-0 top-50 translate-middle-y ps-3 text-muted" id="searchIcon">
+                <i class="fa fa-search"></i>
+            </span>
+            <input class="form-control form-control-lg rounded-pill bg-light ps-5 pe-5 py-2" 
+                   placeholder="Search for products..." 
+                   aria-label="Search" 
+                   name="search" 
+                   id="searchBox" 
+                   oninput="toggleIcons()">
+            <span class="position-absolute end-0 top-50 translate-middle-y pe-3 text-muted cursor-pointer" id="clearIcon" onclick="clearSearch()" style="display: none;">
+                <i class="fa fa-times"></i>
+            </span>
+        </form>
+  
+          <!-- Cart Icon -->
+          <a class="text-light position-relative " href="{% url 'cart:cart' %}">
+            <i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffd43b;"></i>
+            {% if request.user.is_authenticated %}
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartNum">{{ cart_item_quantity }}</span>
+            {% endif %}
+          </a>
+  
+          <!-- Login/Logout -->
+          <div>
+            {% if request.user.is_authenticated %}
+            <a class="dropdown-center dropdown-toggle btn" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             {% if request.user.userprofile.profile_pic %}
+                    <img src="{{ request.user.userprofile.profile_pic.url }}" class="rounded-circle" width="40" height="40" alt="User Image">
+                {% else %}
+                    <img src="{% static 'img/placeholder.png' %}" class="rounded-circle" width="40" height="40" alt="User Image">
+                {% endif %}
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-light text-md-center" aria-labelledby="userDropdown">
+              <li><a class="dropdown-item" href="{% url 'login:profile' %}"><i class="fa-solid fa-user"></i> Profile Update</a></li>
+              <!-- <li><a class="dropdown-item" href="#"><i class="fa-solid fa-heart"></i> Wishlist</a></li> -->
+              <li><a class="dropdown-item" href="{% url 'purchase:myorders' %}">My Orders</a></li>
+              <li><a class="dropdown-item text-danger" href="{% url 'login:logout' %}"><i class="fa-solid fa-arrow-right-from-bracket" style="color: #da2540;"></i> Log out</a></li>
+            </ul>
+            {% else %}
+            <a class="btn btn-sm btn-outline-light rounded-pill fw-bold px-3" href="{% url 'login:user_login' %}">Log in</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+    function toggleIcons() {
+        let searchBox = document.getElementById('searchBox');
+        let searchIcon = document.getElementById('searchIcon');
+        let clearIcon = document.getElementById('clearIcon');
+        
+        if (searchBox.value.trim() === '') {
+            searchIcon.style.display = 'inline';
+            clearIcon.style.display = 'none';
+        } else {
+            searchIcon.style.display = 'none';
+            clearIcon.style.display = 'inline';
+        }
+    }
+    
+    function clearSearch() {
+        document.getElementById('searchBox').value = '';
+        toggleIcons();
+    }
+    
+    function validateSearch() {
+        let searchBox = document.getElementById('searchBox');
+        if (searchBox.value.trim() === '') {
+            document.getElementById('searchBox').value = '';
+            return false;
+        }
+        return true;
+    }
+</script>
+{% block body_block %}
+<body>
+
+      
+
+    <!-- <div id="log">
+            <input id="logName" type="text" placeholder="Enter Email">
+            <input type="password" placeholder="Enter Pass"><br>
+            <button id="btn">Log In</button>
+
+        </div> -->
+    
+    <div class="container-fluid py-5 bg-light">
+        <div class="row align-items-center justify-content-center text-center">
+            <div class="col-md-8">
+                <div class="text">
+                    <h1 class="display-4 fw-bold text-primary">Great Deals, Exciting Offers</h1>
+                    <h3 class="mt-3 text-secondary">Save Upto 30% Off</h3>
+                    <p class="mt-4 text-muted">
+                        <p class="fs-5">Discover the Rich Tradition of Bengal - Authentic Handicrafts and Delicacies.</p>
+                        <p class="fs-5">Enhance Your Collection, Support Local Artisans, and Celebrate the Beauty of Bengal's Timeless Craftsmanship.</p>
+                    </p>
+                    <a href="#trending"><button class="btn btn-primary btn-lg mt-4">Explore</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container py-5" id="trending">
+        <!-- Women Baluchari Sarees Section -->
+        <h1 class="text-center">Trending <span class="text-primary">Baluchari Sarees</span></h1>
+        <div id="baluchariCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+            <!-- Indicators -->
+            
+        
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+                {% for item in baluchari %}
+                {% if forloop.counter0|divisibleby:3 %}
+                <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
+                    <div class="row">
+                {% endif %}
+                        <div class="col-md-4 mb-4">
+                            <div class="card text-center">
+                                <a href="{% url 'products:detail' item.product_id %}">
+                                    <img src="{{ item.product_image.url }}" class="card-img-top" alt="{{ item.product_name }}">
+                                </a>
+                                <div class="card-body">
+                                    <p class="card-text">{{ item.product_name }}</p>
+                                    <h3 class="text-success">Rs: {{ item.product_price }}</h3>
+                                    <div class="text-warning">
+                                        {{ item.rating }}
+                                    </div>
+                                    <a href="{%url 'cart:add_to_cart' item.product_id%}"><button class="btn btn-primary mt-3 w-100">Add to Cart</button></a>
+                                </div>
+                            </div>
+                        </div>
+                {% if forloop.counter|divisibleby:3 or forloop.last %}
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#baluchariCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#baluchariCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+
+        <!-- Women Tant Sarees Section -->
+
+        <h1 class="text-center">Trending <span class="text-primary">Tant Sarees</span></h1>
+
+        <div id="tantCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+                {% for item in tant %}
+                {% if forloop.counter0|divisibleby:3 %}
+                <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
+                    <div class="row">
+                {% endif %}
+                        <div class="col-md-4 mb-4">
+                            <div class="card text-center">
+                                <a href="{% url 'products:detail' item.product_id %}">
+                                    <img src="{{ item.product_image.url }}" class="card-img-top" alt="{{ item.product_name }}">
+                                </a>
+                                <div class="card-body">
+                                    <p class="card-text">{{ item.product_name }}</p>
+                                    <h3 class="text-success">Rs: {{ item.product_price }}</h3>
+                                    <div class="text-warning">
+                                        {{ item.rating }}
+                                    </div>
+                                    <a href="{%url 'cart:add_to_cart' item.product_id%}"><button class="btn btn-primary mt-3 w-100">Add to Cart</button></a>                                </div>
+                            </div>
+                        </div>
+                {% if forloop.counter|divisibleby:3 or forloop.last %}
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#tantCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#tantCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+        <!-- Women T-Shirts Section -->
+        <h1 class="text-center">Traditional <span class="text-primary">Bengal Delicacies</span></h1>
+
+        <div id="sweetCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+                {% for item in sweets %}
+                {% if forloop.counter0|divisibleby:3 %}
+                <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
+                    <div class="row">
+                {% endif %}
+                        <div class="col-md-4 mb-4">
+                            <div class="card text-center">
+                                <a href="{% url 'products:detail' item.product_id %}">
+                                    <img src="{{ item.product_image.url }}" class="card-img-top" alt="{{ item.product_name }}">
+                                </a>
+                                <div class="card-body">
+                                    <p class="card-text">{{ item.product_name }}</p>
+                                    <h3 class="text-success">Rs: {{ item.product_price }}</h3>
+                                    <div class="text-warning">
+                                        {{ item.rating }}
+                                    </div>
+                                    <a href="{%url 'cart:add_to_cart' item.product_id%}"><button class="btn btn-primary mt-3 w-100">Add to Cart</button></a>                                </div>
+                            </div>
+                        </div>
+                {% if forloop.counter|divisibleby:3 or forloop.last %}
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#sweetCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sweetCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- Reviews Section -->
+    <div class="container py-5" id="review">
+        <div class="row text-center mb-4">
+            <h1>Customer <span class="text-primary">Reviews</span></h1>
+        </div>
+        <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Review 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="/media/Main_Frame/madur kathi 5.jpg" class="reviewimg rounded-circle mb-3"
+                            alt="Customer 1">
+                        <p class="text-center">"Amazing quality and fast delivery! Highly recommend."</p>
+                        <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="/media/Main_Frame/teracotta 2.jpg" class="reviewimg rounded-circle mb-3"
+                            alt="Customer 2">
+                        <p class="text-center">"Beautiful designs! My friends loved the sarees I bought."</p>
+                        <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="/media/Main_Frame/santipuri saree 3.jpg" class="reviewimg rounded-circle mb-3"
+                            alt="Customer 3">
+                        <p class="text-center">"Great customer service and high-quality products."</p>
+                        <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    {% endblock %}
+    <!-- CraftLens Modal -->
+    <div class="modal fade" id="craftLensModal" tabindex="-1" aria-labelledby="craftLensModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="craftLensModalLabel">CraftLens: Find What You See</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="virtual-try-on text-center py-3">
+                        <h2>CraftLens</h2>
+                        <p>Explore your favorite products by just a picture!</p>
+
+                        <form method="POST" enctype="multipart/form-data" action="{% url 'products:imageSearch' %}">
+                            {%csrf_token%}
+                            <input type="file" accept="image/*" id="uploadImage" class="btn btn-secondary my-3"
+                                name="image">
+                            <button class="btn btn-primary" onclick="tryOnProduct()" type="submit">Submit</button>
+                        </form>
+                        <canvas id="tryOnCanvas" class="mt-4" width="400" height="400"
+                            style="border:1px solid #ddd;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Chatbot Widget -->
+    {%include 'chatbot.html' %}
+    
+
+</body>
+<footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+        <!-- Back to Top Button -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <a href="#gradient-navbar"><button class="btn btn-primary">Back to Top</button></a>
+            </div>
+        </div>
+
+        <!-- Footer Panels -->
+        <div class="row">
+            <!-- Get to Know Us -->
+            <div class="col-md-3 mb-3">
+                <p><strong>Get to Know Us</strong></p>
+                <a href="#" class="text-white">Careers</a><br>
+                <a href="#" class="text-white">Blog</a><br>
+                <a href="#" class="text-white">About Craft of Bengal</a>
+            </div>
+
+            <!-- Make Money with Us -->
+            <div class="col-md-3 mb-3">
+                <p><strong>Make Money with Us</strong></p>
+                <a href="#" class="text-white">Sell products on Craft of
+                    Bengal</a><br>
+                <a href="#" class="text-white">Advertise Your
+                    Products</a><br>
+                <a href="#" class="text-white">Self-Publish with Us</a><br>
+                <a href="#" class="text-white">See More Make Money with
+                    Us</a>
+            </div>
+
+            <!-- Craft of Bengal Business Card -->
+            <div class="col-md-3 mb-3">
+                <p><strong>Craft of Bengal Business Card</strong></p>
+                <a href="#" class="text-white">Shop with Points</a><br>
+                <a href="#" class="text-white">Reload Your Balance</a>
+            </div>
+
+            <!-- Let Us Help You -->
+            <div class="col-md-3 mb-3">
+                <p><strong>Let Us Help You</strong></p>
+                <a href="#" class="text-white">Your Account</a><br>
+                <a href="#" class="text-white">Your Order</a><br>
+                <a href="#" class="text-white">Shipping Rates &
+                    Policies</a><br>
+                <a href="#" class="text-white">Return & Replacements</a><br>
+                <a href="#" class="text-white">Manage Your Content and
+                    Devices</a><br>
+                <a href="#" class="text-white">Craft of Bengal
+                    Assistant</a><br>
+                <a href="#" class="text-white">Help</a>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-6 mb-3">
+                <div class="d-flex">
+                    <a href="#" class="text-white me-3">Conditions of
+                        Use</a>
+                    <a href="#" class="text-white me-3">Privacy Notice</a>
+                    <a href="#" class="text-white">Your Ads Privacy
+                        Choices</a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3 text-md-end">
+                <div class="copyright">
+                    &copy; 2024-2025, CraftsofBengal.com, Inc. or its
+                    affiliates
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="{% static 'js/index.js' %}"></script>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

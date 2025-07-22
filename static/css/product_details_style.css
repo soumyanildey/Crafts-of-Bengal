@@ -1,0 +1,497 @@
+
+
+
+/* Base Styling for the Comment Section */
+.comments-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* Heading Style */
+.comments-section h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Comment List Styling */
+.list-unstyled {
+    list-style: none;
+    padding-left: 0;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.media:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for User Image */
+.media img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.media img:hover {
+    transform: scale(1.1);
+}
+
+/* Comment Body Styling */
+.media-body {
+    padding-left: 15px;
+}
+
+.media-body h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.media-body small {
+    font-size: 12px;
+    color: #888;
+}
+
+.media-body p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Stylish Form Section for New Comment */
+.comment-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+.comment-form:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Textarea Styling */
+.comment-form textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.comment-form textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Submit Button Styling */
+#submitCommentBtn {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#submitCommentBtn:hover {
+    background-color: #003d7a;
+    transform: scale(1.05);
+}
+
+#submitCommentBtn:active {
+    transform: scale(1);
+}
+
+/* Fade-In Effect for New Comment */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+
+/* ul {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+} */
+
+.desc {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+.row {
+    justify-content: center;
+}
+.rating {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+}
+
+.product-name h2, .product-description p {
+    color: #444;
+}
+
+.product-name h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.product-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.slider img {
+    width: 70%;
+    height: 90%;
+    border-radius: 30px;
+    border: 4px solid goldenrod;
+    padding: 20px;
+}
+
+.btn-custom {
+    background: linear-gradient(145deg, #0062cc, #004b8c);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom:hover {
+    background: linear-gradient(145deg, #0056b3, #003d80);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay.show-overlay {
+    display: block;
+    opacity: 1;
+}
+
+.cart-product {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.cart-product img {
+    max-width: 60px;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.quantity-box {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-quantity {
+    background-color: #f0f1f6;
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-quantity:hover {
+    background-color: #e3e4e8;
+}
+
+.price-update {
+    font-weight: bold;
+    color: #0062cc;
+}
+
+.scrollable-div {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.scrollable-div .card {
+    width: 200px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+}
+
+.scrollable-div .card:hover {
+    transform: translateY(-10px);
+}
+
+.scrollable-div .card img {
+    border-radius: 12px 12px 0 0;
+}
+
+.cart {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #cartNum {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+.cart i {
+    font-size: 25px;
+} */
+
+
+
+/* #change_1 h4 {
+    padding: 7px 12px;
+    border: 1px solid rgb(42, 32, 32);
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000bb;
+    font-size: 20px;
+    position: relative;
+    transition: all ease 0.9s;
+    overflow: hidden;
+}
+
+#change_1 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(88, 81, 81);
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+#change_1 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+
+}
+
+#change_1 h4 a {
+    color: #0f0000bb;
+    text-decoration: none;
+    z-index: 9;
+    position: relative;
+    font-weight: 800;
+}
+
+#change_1 h4:hover a {
+    color: #ffffff;
+} */
+
+
+/* .product_image {
+    width: 50%;
+    padding: 20px;
+}
+
+.product_image img {
+    height: 20%;
+    width: 20%;
+    border-radius: 25px;
+} */
+
+.slider {
+    width: fit-content;
+    height: fit-content;
+    /* overflow: hidden; */
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(128, 128, 128, 1.0);
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+
+.buy_now_button button {
+    background-color: skyblue;
+    border: none;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    transition: box-shadow 0.3s ease;
+}
+
+.buy_now_button button:hover {
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.8);
+}
+
+.add_to_cart_button button {
+    background-color: skyblue;
+    border: none;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: box-shadow 0.3s ease;
+}
+
+.add_to_cart_button button:hover {
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.8);
+}
+
+.review-container {
+    margin-top: 50px;
+}
+
+.review-sub-container {
+    border-radius: 25px;
+    margin: 10px;
+    padding: 20px;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(128, 128, 128, 1.0);
+}
+
+.scrollable-div {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.similar-products-list {
+    width: 30%;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(128, 128, 128, 1.0);
+    border-radius: 25px;
+}
+
+.similar-products-container {
+    height: 600px;
+    overflow: hidden;
+}
+
+.review {
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.user-comment p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.rating .star {
+    font-size: 24px;
+    color: gold;
+}
+
+.card {
+    margin-top: 10px;
+    padding: 5px;
+    box-shadow: 0 2px 10px rgba(128, 128, 128, 1.0);
+    border-radius: 25px;
+}
+
+.card-image {
+    border-radius: 25px;
+
+}
+
+.card-image img {
+
+    border-radius: 25px;
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0 2px 10px rgba(128, 128, 128, 1.0);
+}
+

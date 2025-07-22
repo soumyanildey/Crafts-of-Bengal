@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="{% static 'js/register.js' %}" defer></script>
+    <title>Login - Craft of Bengal</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <h1 style="font-family: Geneva, Tahoma, sans-serif;">Craft of Bengal</h1>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="container2">
+            <div class="mainbox">
+                <h1>Login</h1>
+                <form name="login" onsubmit="return checkn()" method="post">
+                    {% csrf_token %}
+                    
+                    <!-- Email Input -->
+                    <div class="box">
+                        <input type="text" id="mail-id" name="email" placeholder="Enter Mail Id" required>
+                        <i class="bx bxl-gmail"></i>
+                    </div>
+                    <p></p>
+
+                    <!-- Password Input -->
+                    <div class="box">
+                        <input type="password" id="pass-word" name="pw" placeholder="Enter Your Password" required>
+                        <i class="fa-regular fa-eye"id="toggle-password"></i>
+                    
+                    </div>
+
+                    <!-- Forgot Password Link -->
+                    <div class="forget" style="text-align: right;">
+                        <a class="for-pass" href="#">Forgot Password?</a>
+                    </div>
+
+                    <!-- Terms of Use -->
+                    <div class="link">
+                        <p style="display: flex;">
+                            By continuing, I agree to the &nbsp;
+                            <span style="color: rgba(255, 0, 127, 0.5);">
+                                Terms of Use & Privacy Policy
+                            </span>
+                        </p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div style="display: flex; justify-content: space-evenly;">
+                        <button class="button" type="submit">LOG IN</button>
+                    </div>
+
+                    <!-- Additional Links -->
+                    <div class="link">
+                        Have trouble logging in? <a href="#">Get help</a>
+                        <p><a class="click" href="{% url 'login:register' %}">New User?</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Back to Top Button -->
+        <div class="foot-panel1">
+            <button onclick="window.scrollTo(0, 0)">Back to Top</button>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Craft of Bengal</a></li>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <li><a href="#">Sell products on Craft of Bengal</a></li>
+                <li><a href="#">Advertise Your Products</a></li>
+                <li><a href="#">Self-Publish with Us</a></li>
+                <li><a href="#">See More Make Money with Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Craft of Bengal Business Card</a></li>
+                <li><a href="#">Shop with Points</a></li>
+                <li><a href="#">Reload Your Balance</a></li>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Your Order</a></li>
+                <li><a href="#">Shipping Rates & Policies</a></li>
+                <li><a href="#">Return & Replacements</a></li>
+                <li><a href="#">Manage Your Content and Devices</a></li>
+                <li><a href="#">Craft of Bengal Assistant</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="foot-panel3">
+            <div class="pages">
+                <a href="#">Conditions of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Your Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                &copy; 1996-2023, Craft_of_Bengal.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

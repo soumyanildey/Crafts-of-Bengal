@@ -1,0 +1,94 @@
+<!-- templates/chatbot_widget.html -->
+
+<!-- Floating Chat Button -->
+<div class="chatbot-widget" onclick="toggleChat()">
+    💬
+</div>
+
+<!-- Chatbot Box -->
+<div class="chat-container card shadow" id="chatContainer">
+    <h5 class="text-center">Chatbot</h5>
+    <p class="text-muted text-center">How can I assist you today?</p>
+
+    <div id="chatMessages" class="mb-3" style="max-height: 200px; overflow-y: auto;"></div>
+
+    <!-- Chat Input -->
+    <div class="input-group">
+        <input type="text" class="form-control" id="userInput" placeholder="Type a message..." required>
+        <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<style>
+    .chatbot-widget {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .chat-container {
+        display: none;
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        width: 300px;
+        height: 400px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+</style>
+
+<script>
+    function toggleChat() {
+        var chatBox = document.getElementById("chatContainer");
+        chatBox.style.display = (chatBox.style.display === "none" || chatBox.style.display === "") ? "block" : "none";
+    }
+
+    async function sendMessage() {
+        const input = document.getElementById("userInput");
+        const message = input.value.trim();
+        if (!message) return;
+
+        const chatMessages = document.getElementById("chatMessages");
+        chatMessages.innerHTML += `<p><strong>You:</strong> ${message}</p>`;
+        input.value = "";
+
+        const response = await fetch("{% url 'chatbot_handler' %}", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "X-CSRFToken": getCSRFToken()
+            },
+            body: new URLSearchParams({ chat_query: message })
+        });
+
+        const data = await response.json();
+        chatMessages.innerHTML += `<p style="color: blue;"><strong>Chatbot:</strong> ${data.response}</p>`;
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function getCSRFToken() {
+        const name = 'csrftoken';
+        const cookies = document.cookie.split(';');
+        for (let cookie of cookies) {
+            const [key, value] = cookie.trim().split('=');
+            if (key === name) return decodeURIComponent(value);
+        }
+        return '';
+    }
+</script>

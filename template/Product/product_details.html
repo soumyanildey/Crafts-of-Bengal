@@ -1,0 +1,221 @@
+{% extends 'Home/index.html' %}
+{% block body_block %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    {% load batch %}
+    <link rel="stylesheet" href="{% static 'css/product_details_style.css' %}">
+</head>
+
+<body>
+    {% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-danger">{{ message }}</div>
+    {% endfor %}
+{% endif %}
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Image Section -->
+            <div class="col-md-6">
+                <div class="slider">
+                    <div class="slides"> 
+                        <img src="{{ products.product_image.url }}" alt="Product Image 1" class="img-fluid m-3">
+                        <!-- <img src="{{ products.product_image.url }}" alt="Product Image 2" class="img-fluid m-3">
+                        <img src="{{ products.product_image.url }}" alt="Product Image 3" class="img-fluid m-3"> -->
+                    </div>
+                    <!-- <button class="btn btn-light prev" onclick="prevSlide()">❮</button>
+                    <button class="btn btn-light next" onclick="nextSlide()">❯</button>-->
+                </div> 
+                <div class="text-center mt-3">
+                    <h5>Mini Description Or Anything</h5>
+                </div>
+            </div>
+
+            <!-- Product Details Section -->
+            <div class="col-md-6">
+                <div class="product-name mb-3">
+                    <h2>{{ products.product_name }}</h2>
+                    <p><span class="rating">{{ rating }}</span> {{ rating_count }} Ratings & {{ review_count }} Reviews</p>
+                    <p class="price"><strong>₹ {{ products.product_price }}</strong></p>
+                </div>
+
+                <div class="product-description mb-4">
+                    <p class="desc">{{ products.product_description }}</p>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <div>
+                        {% if products.product_quantity > 0 %}
+                        <a href="{% url 'cart:buy_now' products.product_id %}">
+                            <button type="button" class="btn-custom">Buy Now</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="{% url 'cart:add_to_cart' products.product_id %}">
+                            <button type="button" class="btn btn-outline-primary">Add to Cart</button>
+                        </a>
+                        {% else %}
+                            <a href="" class="btn btn-danger"> Out of Stock </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comments-section mt-4">
+            <h5 class="mb-3">Customer Reviews</h5>
+            <ul class="list-unstyled">
+                {% for review in reviews%}
+                <li class="media mb-4">
+                    <img src="{{review.user.profile_pic}}" class="mr-3 rounded-circle" alt="User" width="50" height="50">
+                    <div class="media-body">
+                        <h6 class="mt-0 mb-1">{{review.user.user.username}} <small><i>Posted on {{review.timestamp}}</i></small></h6>
+                        <p>{{review.review}}</p>
+                    </div>
+                </li>
+                {%endfor%}
+            </ul>
+        </div>
+        
+        <div class="comment-form mt-5">
+            <h5>Leave a Comment</h5>
+            <form>
+                <div class="form-group">
+                    <label for="commentInput">Your Comment</label>
+                    <textarea class="form-control" id="commentInput" rows="4" placeholder="Write your comment here..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" id="submitCommentBtn">Post Comment</button>
+                </div>
+            </form>
+        </div>
+        
+
+        <!-- Similar Products Section -->
+        <div class="mt-5">
+            <h3 class="text-center mb-4">Frequently Bought Together</h3>
+            <div id="frequentlyBoughtCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    {% for batch in recommended_items|batch:3 %}
+                        <button type="button" data-bs-target="#frequentlyBoughtCarousel" data-bs-slide-to="{{ forloop.counter0 }}" 
+                                {% if forloop.first %}class="active"{% endif %} 
+                                aria-current="true" aria-label="Slide {{ forloop.counter }}"></button>
+                    {% endfor %}
+                </div>
+        
+                <!-- Carousel Content -->
+                <div class="carousel-inner">
+                    {% for batch in recommended_items|batch:3 %}
+                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                            <div class="row justify-content-center">
+                                {% for item in batch %}
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <a href="{% url 'products:detail' item.product_id %}">
+                                                <img src="{{ item.product_image.url }}" class="card-img-top" alt="Product Image">
+                                            </a>
+                                            <div class="card-body">
+                                                <p class="card-text text-center">{{ item.product_name }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+        
+                <!-- Navigation Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#frequentlyBoughtCarousel" data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-left fa-beat-fade fa-2xl" style="color: #000000;"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#frequentlyBoughtCarousel" data-bs-slide="next">
+                    <i class="fa-solid fa-chevron-right fa-beat-fade fa-2xl" style="color: #000000;"></i>
+                </button>
+            </div>
+        </div>        
+    </div>
+
+
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            const slides = document.querySelectorAll('.slides img');
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            slides.forEach((slide) => {
+                slide.style.display = 'none';
+            });
+            slides[slideIndex].style.display = 'block';
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            showSlides();
+        }
+
+        function prevSlide() {
+            slideIndex--;
+            showSlides();
+        }
+
+        // Initially show the first slide
+        showSlides();
+
+        // Side panel cart toggle
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const sidePanel = document.getElementById('sidePanel');
+        const overlay = document.getElementById('overlay');
+
+        openBtn.addEventListener('click', function () {
+            sidePanel.classList.add('show-panel');
+            overlay.classList.add('show-overlay');
+        });
+
+        closeBtn.addEventListener('click', function () {
+            sidePanel.classList.remove('show-panel');
+            overlay.classList.remove('show-overlay');
+        });
+
+        $('#submitCommentBtn').on('click', function(e) {
+        e.preventDefault();
+        let commentText = $('#commentInput').val();
+
+        // Assuming comment is posted successfully
+        let newComment = `
+            <li class="media mb-4 fade-in">
+                <img src="user3.jpg" class="mr-3 rounded-circle" alt="User Image" width="50" height="50">
+                <div class="media-body">
+                    <h6 class="mt-0 mb-1">New User <small><i>Just now</i></small></h6>
+                    <p>${commentText}</p>
+                </div>
+            </li>
+        `;
+        
+        $('.comments-section ul').prepend(newComment);
+        $('#commentInput').val('');
+        
+        // Fade-in effect for the new comment
+        $('.fade-in').hide().fadeIn(500);
+    });
+
+
+    </script>
+    <!-- Bootstrap JS -->
+
+</body>
+{% endblock %}
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'Home/index.html' %}
+{% block body_block %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baluchuri Sarees</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Grid Layout */
+        .layout {
+            display: grid;
+            grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
+            height: 100vh;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 25% 1fr; /* Filters and Products */
+            overflow: hidden;
+        }
+
+        aside {
+            background-color: #f8f9fa; /* Light background for filters */
+            border-right: 1px solid #ddd;
+            overflow-y: auto; /* Scrollable filter section */
+            padding: 20px;
+        }
+
+        .product-section {
+            overflow-y: auto; /* Scrollable product section */
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <!-- Header Section -->
+        <header>
+            {% block header_block %}
+            <!-- Include the header content here -->
+            {% endblock %}
+        </header>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Filter Section -->
+            <aside>
+                <div class="card p-3 shadow-sm">
+                    <h4>Filters</h4>
+                    <hr>
+                    <!-- Category Filter -->
+                    <div class="mb-3">
+                        <h5>Category</h5>
+                        <div>
+                            <input type="checkbox" id="handicrafts"> <label for="handicrafts">Handicrafts</label><br>
+                            <input type="checkbox" id="textiles"> <label for="textiles">Textiles</label><br>
+                            <input type="checkbox" id="jewelry"> <label for="jewelry">Jewelry</label>
+                        </div>
+                    </div>
+                    <!-- Price Range Filter -->
+                    <div class="mb-3">
+                        <h5>Price Range</h5>
+                        <input type="range" class="form-range" min="0" max="5000" step="100" id="priceRange">
+                        <div class="d-flex justify-content-between">
+                            <span>₹0</span>
+                            <span>₹5000+</span>
+                        </div>
+                    </div>
+                    <!-- Ratings Filter -->
+                    <div class="mb-3">
+                        <h5>Ratings</h5>
+                        <div>
+                            <input type="radio" name="rating" id="fourStar"> <label for="fourStar">4 & Above</label><br>
+                            <input type="radio" name="rating" id="threeStar"> <label for="threeStar">3 & Above</label>
+                        </div>
+                    </div>
+                    <!-- Type Filter -->
+                    <div class="mb-3">
+                        <h5>Type</h5>
+                        <div>
+                            <input type="checkbox" id="handmade"> <label for="handmade">Handmade</label><br>
+                            <input type="checkbox" id="machineMade"> <label for="machineMade">Machine Made</label>
+                        </div>
+                    </div>
+                    <!-- Availability Filter -->
+                    <div>
+                        <h5>Availability</h5>
+                        <div>
+                            <input type="checkbox" id="inStock"> <label for="inStock">In Stock</label><br>
+                            <input type="checkbox" id="outOfStock"> <label for="outOfStock">Out of Stock</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-3" id="applyFilters">Apply Filters</button>
+                </div>
+            </aside>
+
+            <!-- Product Section -->
+            <section class="product-section">
+                {% for cat in category %}
+                <div class="text-center mb-4">
+                    <h1 class="display-4">{{ cat }}</h1>
+                </div>
+                <div class="row">
+                    {% for item in items %}
+                    {% if item.product_type == cat %}
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card shadow">
+                            <div class="card-img-top">
+                                <a href="{% url 'products:detail' item.product_id %}">
+                                    <img src="{{ item.product_image.url }}" alt="{{ item.product_name }}" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">{{ item.product_name }}</h5>
+                                <p class="text-muted">{{ item.product_price }} Rs/-</p>
+                                <div class="d-flex justify-content-center mb-3">
+                                    <button class="btn btn-custom btn-wishlist me-2">Wishlist</button>
+                                    <a href="{% url 'cart:add_to_cart' item.product_id %}">
+                                        <button class="btn btn-custom btn-cart me-2">Add To Cart</button>
+                                    </a>
+                                    <button class="btn btn-primary btn-compare" id="addToCompareBtn" data-product-id="{{ item.product_id }}">Compare</button>
+                                </div>
+                                <div class="ratings d-flex align-items-center justify-content-center">
+                                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;</span>
+                                    <span class="text-secondary">&#9734;</span>
+                                    <span class="ms-2 text-muted small">4.0 (24 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </section>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            {% block footer_block %}
+            <!-- Include the footer content here -->
+            {% endblock %}
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+{% endblock %}
+</html>

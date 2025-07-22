@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'Home/index.html' %} {% block body_block %}
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart</title>
+  {%load static%}
+  <!-- <link rel="stylesheet" href="{% static 'css/product_details_style.css'% }"> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+  <style>
+    .remove {
+      border-radius: 55px;
+      background-color: #d11a2a;
+      color: white;
+      font-size: medium;
+      padding: 15px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: larger;
+    }
+
+    .cart-container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    table,
+    th,
+    th,
+    td {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .total-container {
+      text-align: right;
+      margin-top: 20px;
+    }
+
+    .checkout-button {
+      display: block;
+      width: 200px;
+      padding: 10px;
+      margin: 20px auto;
+      text-align: center;
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .checkout-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cart-container">
+    <h1>Your Cart</h1>
+    <table >
+      <thead>
+        <tr>
+          <th>Item Image</th>
+          <th>Item Name</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+        {%for item in cart%}
+
+        <tr>
+          <td>
+            <a href="{% url 'products:detail' item.product_id %}">
+              <img src="{{item.product.product_image.url}}" alt="{{item.product.product_name}}" width="160" />
+            </a>
+          </td>
+
+          <td><strong>{{item.product.product_name}}</strong></td>
+          <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a href="{%url 'cart:decrease_quantity' item.id%}">
+              <button type="button" class="btn btn-danger">
+                  <i class="fa-solid fa-minus" style="color: #000000;"></i>
+                </button>
+              </a>
+              <button type="button" class="btn btn-light">
+                <strong> {{item.quantity}} </strong>
+              </button>
+              <a href="{%url 'cart:increase_quantity' item.id%}">
+              <button type="button" class="btn btn-success">
+                  <i class="fa-solid fa-plus"
+                    style="color: #050505;"></i>
+                  </button>
+                </a>
+            </div>
+          </td>
+          <td><strong>{{item.get_unit_price}}</strong></td>
+          <td><strong>{{item.get_total_price}}</strong></td>
+          <td>
+            <a href="{% url 'cart:remove_from_cart' item.id %}">
+              <!-- <button type="button" class="remove"> -->
+              <i class="fa-solid fa-trash fa-xl" style="color: #d31734;"></i>
+              <!-- </button> -->
+            </a>
+          </td>
+        </tr>
+        {% empty %}
+        <tr>
+          <td colspan="6" style="text-align: center">
+            <h1>No Items in Cart</h1>
+          </td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+    {% for item in cart %} {% if forloop.last %}
+   
+    {% endif %} {%endfor%}
+    
+    <a href="{% url 'purchase:checkout' %}" class="checkout-button">Proceed to Checkout</a>
+  </div>
+
+  <script>
+    // JavaScript to handle cart functionalities like updating quantities and removing items
+    document.addEventListener("DOMContentLoaded", () => {
+      const cartItems = document.querySelectorAll(".quantity");
+      const removeButtons = document.querySelectorAll(".remove-item");
+
+      cartItems.forEach((item) => {
+        item.addEventListener("change", updateCart);
+      });
+
+      removeButtons.forEach((button) => {
+        button.addEventListener("click", removeFromCart);
+      });
+    });
+
+    function updateCart() {
+      // Update cart total and individual item totals
+      let total = 0;
+      document.querySelectorAll("tbody tr").forEach((row) => {
+        const quantity = row.querySelector(".quantity").value;
+        const price = parseFloat(row.cells[3].innerText.replace("₹", ""));
+        const itemTotal = quantity * price;
+        row.cells[4].innerText = `₹${itemTotal.toFixed(2)}`;
+        total += itemTotal;
+      });
+      document.querySelector(
+        ".total-container h3"
+      ).innerText = `Total Amount: ₹${total.toFixed(2)}`;
+    }
+
+    function removeFromCart(event) {
+      // Remove the item from the cart
+      const row = event.target.closest("tr");
+      row.remove();
+      updateCart();
+    }
+  </script>
+</body>
+{%endblock%}
+
+</html>
