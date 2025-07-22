@@ -21,7 +21,7 @@ An e-commerce platform dedicated to showcasing and selling traditional crafts an
 - Shopping cart functionality
 - Checkout process
 - Order management and tracking
-- Multiple payment mode options
+- COD payment mode options
 - Order status updates (Pending, Out for Shipping, Completed)
 
 ### Reviews and Ratings
@@ -41,7 +41,7 @@ An e-commerce platform dedicated to showcasing and selling traditional crafts an
 - Blog permissions management
 
 ### Customer Support
-- FAQ chatbot using transformer models
+- FAQ chatbot using embedding transformer models
 - Natural language processing for query understanding
 
 ### Search Capabilities
@@ -134,6 +134,27 @@ The project includes pre-trained machine learning models for recommendations. Th
 - `ml_model/MatFac.pkl` - Matrix factorization model
 
 These files should be included in the repository. If not, you'll need to train the models using the provided Jupyter notebooks in the `ml_model` directory.
+
+#### Using feature_extractor.py
+
+The `feature_extractor.py` script is used to create the InceptionResNetV2-based model for image feature extraction. This model is a critical component of the image-based recommendation system.
+
+**Purpose:**
+- Creates and saves a pre-trained InceptionResNetV2 model with GlobalMaxPooling2D layer
+- Generates the `model.keras` file used by the recommendation system
+
+**Usage:**
+```bash
+python ml_model/feature_extractor.py
+```
+
+**How it works:**
+1. Loads the InceptionResNetV2 model with pre-trained ImageNet weights
+2. Freezes the base model layers to preserve the pre-trained weights
+3. Adds a GlobalMaxPooling2D layer to convert feature maps to feature vectors
+4. Saves the model in .keras format for later use by the recommendation system
+
+This script only needs to be run once to generate the model file, or if you want to recreate the model with different parameters.
 
 ## Project Structure
 
