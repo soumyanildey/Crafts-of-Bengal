@@ -15,7 +15,7 @@
     <!-- Chat Input -->
     <div class="input-group">
         <input type="text" class="form-control" id="userInput" placeholder="Type a message..." required>
-        <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+        <button class="btn btn-primary" id="sendButton" onclick="sendMessage()">Send</button>
     </div>
 </div>
 
@@ -51,35 +51,83 @@
         z-index: 1000;
         overflow-y: auto;
     }
+    
+    .typing-indicator {
+        color: #888;
+        font-style: italic;
+    }
 </style>
 
 <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const userInput = document.getElementById("userInput");
+        userInput.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                sendMessage();
+            }
+        });
+    });
+    
     function toggleChat() {
         var chatBox = document.getElementById("chatContainer");
         chatBox.style.display = (chatBox.style.display === "none" || chatBox.style.display === "") ? "block" : "none";
+        if (chatBox.style.display === "block") {
+            document.getElementById("userInput").focus();
+        }
     }
 
     async function sendMessage() {
         const input = document.getElementById("userInput");
+        const sendButton = document.getElementById("sendButton");
         const message = input.value.trim();
-        if (!message) return;
+        if (!message || sendButton.disabled) return;
 
+        // Disable input and button while processing
+        input.disabled = true;
+        sendButton.disabled = true;
+        
         const chatMessages = document.getElementById("chatMessages");
         chatMessages.innerHTML += `<p><strong>You:</strong> ${message}</p>`;
+        chatMessages.innerHTML += `<p class="typing-indicator" id="typingIndicator"><strong>Chatbot:</strong> typing...</p>`;
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+        
+        // Clear input immediately
         input.value = "";
 
-        const response = await fetch("{% url 'chatbot_handler' %}", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
-                "X-CSRFToken": getCSRFToken()
-            },
-            body: new URLSearchParams({ chat_query: message })
-        });
+        try {
+            const response = await fetch("{% url 'chatbot_handler' %}", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    "X-CSRFToken": getCSRFToken()
+                },
+                body: new URLSearchParams({ chat_query: message })
+            });
 
-        const data = await response.json();
-        chatMessages.innerHTML += `<p style="color: blue;"><strong>Chatbot:</strong> ${data.response}</p>`;
-        chatMessages.scrollTop = chatMessages.scrollHeight;
+            const data = await response.json();
+            
+            // Remove typing indicator and add response
+            const typingIndicator = document.getElementById("typingIndicator");
+            if (typingIndicator) {
+                typingIndicator.remove();
+            }
+            
+            chatMessages.innerHTML += `<p style="color: blue;"><strong>Chatbot:</strong> ${data.response}</p>`;
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        } catch (error) {
+            console.error("Error:", error);
+            const typingIndicator = document.getElementById("typingIndicator");
+            if (typingIndicator) {
+                typingIndicator.remove();
+            }
+            chatMessages.innerHTML += `<p style="color: red;"><strong>Chatbot:</strong> Sorry, I couldn't process your request.</p>`;
+        } finally {
+            // Re-enable input and button
+            input.disabled = false;
+            sendButton.disabled = false;
+            input.focus();
+        }
     }
 
     function getCSRFToken() {

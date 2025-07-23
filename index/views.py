@@ -14,7 +14,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST
-from .faq_bot import get_bot_response
+from ml_model.faq_bot import get_bot_response
 
 
 
@@ -24,7 +24,7 @@ def chatbot_handler(request):
     query = request.POST.get("chat_query", "")
     if not query:
         return JsonResponse({"response": "Please enter a message."})
-    
+
     response = get_bot_response(query)
     return JsonResponse({"response": response})
 
@@ -56,7 +56,7 @@ class IndexView(TemplateView):
         else:
             context['userprofile'] = None  # or handle appropriately
         return context
-    
+
 
     # @csrf_exempt
     # def post(self, request, *args, **kwargs):
@@ -70,7 +70,7 @@ class IndexView(TemplateView):
     #             **self.get_context_data()  # Include context data as well
     #         })
     #     return self.get(request, *args, **kwargs)  # Handle as normal GET request if no query is provided
-    
+
 
 @login_required(login_url=LOGIN_URL)
 def cart_quantity(request):

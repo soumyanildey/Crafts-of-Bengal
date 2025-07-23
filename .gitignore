@@ -1,3 +1,4 @@
 model.keras
 # Ignore the ML model
 e_commerce/ml_model/model.h5
+ov_model_llama_3.2/

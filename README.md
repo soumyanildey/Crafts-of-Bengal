@@ -41,8 +41,10 @@ An e-commerce platform dedicated to showcasing and selling traditional crafts an
 - Blog permissions management
 
 ### Customer Support
-- FAQ chatbot using embedding transformer models
+- Interactive FAQ chatbot using embedding transformer models
 - Natural language processing for query understanding
+- Real-time asynchronous chat interface without page reloads
+- Visual typing indicators for better user experience
 
 ### Search Capabilities
 - Full-text search using Django Haystack
@@ -64,6 +66,10 @@ An e-commerce platform dedicated to showcasing and selling traditional crafts an
 - TensorFlow/Keras
 - scikit-learn
 - OpenCV
+- Transformers with OpenVINO optimization
+- FAISS for efficient similarity search
+- LLM quantization for CPU inference
+- Retrieval-Augmented Generation (RAG)
 
 ### Search
 - Django Haystack
@@ -125,13 +131,14 @@ An e-commerce platform dedicated to showcasing and selling traditional crafts an
 
 ### Machine Learning Model Setup
 
-The project includes pre-trained machine learning models for recommendations. The model files are:
+The project includes pre-trained machine learning models for recommendations and customer support. The model files are:
 - `ml_model/model.keras` - Image feature extraction model
 - `ml_model/Images_features.pkl` - Extracted image features
 - `ml_model/filenames.pkl` - Image filenames for recommendations
 - `ml_model/correlation_matrix.pkl` - For collaborative filtering
 - `ml_model/ItemBase.pkl` - Item-based collaborative filtering model
 - `ml_model/MatFac.pkl` - Matrix factorization model
+- `ml_model/ov_model_llama_3.2/` - OpenVINO optimized LLM for chatbot responses
 
 These files should be included in the repository. If not, you'll need to train the models using the provided Jupyter notebooks in the `ml_model` directory.
 
@@ -155,6 +162,28 @@ python ml_model/feature_extractor.py
 4. Saves the model in .keras format for later use by the recommendation system
 
 This script only needs to be run once to generate the model file, or if you want to recreate the model with different parameters.
+
+#### Using faq_bot.py
+
+The `faq_bot.py` script powers the customer support chatbot using transformer models and FAISS for efficient similarity search.
+
+**Purpose:**
+- Provides real-time responses to customer queries about orders, products, and services
+- Uses embedding models to match user queries with relevant FAQ content
+- Leverages OpenVINO-optimized LLM for generating natural language responses
+
+**Key Components:**
+- Sentence transformer for semantic understanding of user queries
+- FAISS index for fast similarity search in the FAQ database
+- OpenVINO-optimized LLM for generating contextually relevant responses
+- Asynchronous interface for smooth user experience without page reloads
+
+**Advanced AI Techniques:**
+- LLM quantization for efficient CPU inference without GPU requirements
+- Retrieval-Augmented Generation (RAG) system for grounding responses in factual data
+- Prompt engineering with system instructions for controlled AI behavior
+- Context-aware response generation with multi-turn conversation capability
+- Efficient vector similarity search for real-time performance
 
 ## Project Structure
 
